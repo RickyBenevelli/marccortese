@@ -55,3 +55,46 @@ export default function Home() {
 }
 ```
 Ho creato il file .gitignore e ho inizializzato il repository con `git init`.
+
+
+Ho aggiunto un componente per impostare un'immagine come sfondo:
+```js
+// ImageBackground.jsx
+const ImageBackground = ({children}) => {
+  return (
+    <section className="relative flex  w-screen  flex-col items-center justify-between">
+      <div className='absolute inset-0'>
+        <Image src={placeholder} alt="" fill className='w-full brightness-[0.9] object-cover' sizes="100vw" style={{
+            objectFit: 'cover',
+          }} priority/>
+      </div>
+
+      <div className='h-full max-w-[1240px] w-full m-auto flex flex-col items-start pt-40 relative z-10 text-white'>
+        {children}
+      </div>
+    </section>
+  )
+}
+
+export default ImageBackground
+```
+
+Ho creto un PageLayout per gestire la struttura delle pagine:
+```js
+// PageLayout.jsx
+const PageLayout = ({children}) => {
+  return (
+    <section>
+        <ImageBackground>
+            <NavBar />
+            {children}
+            <Footer />
+        </ImageBackground>
+    </section>
+  )
+}
+
+export default PageLayout
+```
+
+Ho aggiunto il componente (`DownloadButton`) per scaricare il file pdf. Ancora però non funziona.

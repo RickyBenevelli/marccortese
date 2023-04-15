@@ -14,22 +14,25 @@ import menu from '@/json/menu.json'
 export default function Home() {
 
   const { locale, locales, defaultLocale } = useRouter();
+
   return (
     <main className="relative flex h-screen w-screen overflow-hidden flex-col items-center justify-between">
       <div className='absolute inset-0'>
-        <Image src={placeholder} alt="" className='w-full brightness-[0.9]' priority/>
+        <Image src={placeholder} alt="" fill className='w-full brightness-[0.9] object-cover' sizes="100vw" style={{
+            objectFit: 'cover',
+          }} priority/>
       </div>
 
-      <div className='flex flex-col max-w-xl w-full h-full items-center justify-between py-10 relative z-10 text-white'>
-        <h1 className='text-6xl font-semibold pt-10'>Marc Cortese</h1>
+      <div className='flex flex-col max-w-3xl w-full h-full items-center justify-between py-10 relative z-10 text-white'>
+        <h1 className='text-4xl font-semibold pt-10'>Marc Cortese</h1>
 
-        <ul className='text-2xl text-center'>
+        <ul className='text-2xl text-center font-light'>
           {
             menu.map((item, index) => {
               return (   
-                <li>
+                <li key={index} className='cursor-pointer'>
                   <Link href={`/${item}`} locale="it">
-                    <p className='p-2 capitalize'>{item}</p>
+                    <p className='p-2 capitalize hover:text-black transition-all duration-100 ease-in'>{item}</p>
                   </Link>
                 </li>   
               )
@@ -38,14 +41,26 @@ export default function Home() {
         </ul>
 
 
-        <div className='flex flex-row items-center justify-between w-full pb-10'>
+        <div className='flex flex-row flex-wrap items-center justify-center w-full pb-10 px-10'>
 
-          <FaFacebook size={35}/>
-          <FaInstagram size={35}/>
-          <FaSpotify size={35}/>
-          <FaYoutube size={35}/>
-          <FaMusic size={35}/>
-          <FaAmazon size={35}/>
+          <Link href={"/facebook"}>
+          <FaFacebook className='socialIcon'/>
+          </Link>
+          <Link href={"/instagram"}>
+          <FaInstagram className='socialIcon'/>
+          </Link>
+          <Link href={"/spotify"}>
+          <FaSpotify className='socialIcon'/>
+          </Link>
+          <Link href={"/youtube"}>
+          <FaYoutube className='socialIcon'/>
+          </Link>
+          <Link href={"/"}>
+          <FaMusic className='socialIcon'/>
+          </Link>
+          <Link href={"/amazon"}>
+          <FaAmazon className='socialIcon'/>
+          </Link>
 
         </div>
       </div>
