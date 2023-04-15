@@ -5,8 +5,8 @@ import placeholder from '../public/placeholder.png'
 
 const ImageBackground = ({children}) => {
   return (
-    <section className="relative flex  w-screen  flex-col items-center justify-between">
-      <div className='absolute inset-0'>
+    <section className="max-w-[1240] m-auto relative flex  w-screen  flex-col items-center justify-between">
+      <div className='fixed z-[-1] inset-0 h-screen'>
         <Image src={placeholder} alt="" fill className='w-full brightness-[0.9] object-cover' sizes="100vw" style={{
             objectFit: 'cover',
           }} priority/>

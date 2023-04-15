@@ -98,3 +98,5 @@ export default PageLayout
 ```
 
 Ho aggiunto il componente (`DownloadButton`) per scaricare il file pdf. Ancora però non funziona.
+
+Aggiunta la proprietà `backdrop-blur`alla Navbar così che sfochi quello che passa sotto. La NavBar l'ho poi spostata fuori dall' `ImageBackground`.

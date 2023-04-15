@@ -6,9 +6,9 @@ import ImageBackground from './ImageBackground'
 
 const PageLayout = ({children}) => {
   return (
-    <section>
+    <section className='flex flex-col items-center'>
+        <NavBar />
         <ImageBackground>
-            <NavBar />
             {children}
             <Footer />
         </ImageBackground>
