@@ -12,8 +12,8 @@ const monoton = Monoton(
 
 const PageTitle = ({children}) => {
   return (
-    <div className={`w-full py-10 ${monoton.className}`}>
-        <h1 className='text-6xl font-semibold'>{children}</h1>
+    <div className={`w-full py-5 md:py-10 ${monoton.className}`}>
+        <h1 className='text-4xl md:text-6xl font-semibold'>{children}</h1>
     </div>
   )
 }

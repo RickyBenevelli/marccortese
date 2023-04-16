@@ -5,6 +5,12 @@ import { useRouter } from 'next/router';
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import LOGO from '@/public/icons/LOGO.svg'
+import facebook from '@/public/icons/Facebook.svg'
+import amazon from '@/public/icons/Amazonmusic.svg'
+import apple from '@/public/icons/Applemusic.svg'
+import instagram from '@/public/icons/Instagram.svg'
+import spotify from '@/public/icons/Spotify.svg'
+import youtube from '@/public/icons/Youtube.svg'
 
 import menu from '@/json/menu.json'
 
@@ -19,6 +25,7 @@ const NavBar = () => {
   return (
     <>
       <nav className='z-50 w-full fixed top-0 h-20 backdrop-blur flex flex-row items-center justify-between text-white'>
+
           <div className='max-w-[1240px] w-full m-auto flex flex-row items-center justify-between'>
 
               <Link href={"/"}>
@@ -44,19 +51,19 @@ const NavBar = () => {
                       }
                   </ul>
 
-              <div className='pr-5 pl-2 hidden md:flex flex-row text-sm'>
+              <div className='pr-5 pl-2 hidden md:flex flex-row text-sm items-center'>
                   <Link
                       href={asPath}
                       locale="it"
-                      className='p-2'
+                      className={`p-2 ${locale === 'it' ? 'text-white/80 underline' : 'text-white/40'}`}
                   >
                       IT
                   </Link>
-
+                <p className=''>|</p>
                   <Link
                       href={asPath}
                       locale="en"
-                      className='p-2'
+                      className={`p-2 ${locale === 'it' ? 'text-white/40' : 'text-white/80 underline'}`}
                   >
                       ENG
                   </Link>
@@ -64,10 +71,7 @@ const NavBar = () => {
 
               {/* only on mobile */}
               <div className='md:hidden'>
-                      {isOpen?
-                      <AiOutlineClose className='w-10 h-10 fill-white m-5' onClick={toggleMenu}/>:
-                      <AiOutlineMenu className='w-10 h-10 fill-white m-5' onClick={toggleMenu}/>
-                      }
+                    {!isOpen && <AiOutlineMenu className='w-10 h-10 fill-white m-5 transition-all ease-in duration-200' onClick={toggleMenu}/>}
               </div>
           </div>
 
@@ -75,9 +79,74 @@ const NavBar = () => {
       </nav>
 
       {/* tendina del menù mobile */}
-      {/* <div className='fixed top-0 bottom-0 w-screen h-screen bg-black/70 '>
-                    ciao
-      </div> */}
+      <div className={`fixed top-0 bottom-0 w-screen h-screen bg-black/90 z-50 md:hidden ${isOpen ? "" : "hidden"}`}>
+        <div className='fixed max-w-[1240px] w-full m-auto flex flex-row items-center justify-end'>
+            {isOpen && <AiOutlineClose className='w-10 h-10 fill-white m-5 transition-all ease-in duration-200' onClick={toggleMenu}/>}
+        </div>
+        
+
+        <div className='flex flex-col w-full h-full pt-20 items-center justify-between text-white'>
+
+            <ul className='grow text-2xl text-center font-light flex flex-col justify-around pb-[2vh]'>
+            {
+                menu.map((item, index) => {
+                return (   
+                    <li key={index} className='cursor-pointer'>
+                    <Link href={`/${item}`} locale="it">
+                        <p className='p-2 capitalize hover:text-white/80 transition-all duration-100 ease-in'>{item}</p>
+                    </Link>
+                    </li>   
+                )
+                })
+            }
+            </ul>
+
+            <div className='flex flex-row text-sm items-center'>
+                  <Link
+                      href={asPath}
+                      locale="it"
+                      className={`p-2 ${locale === 'it' ? 'text-white/80 underline' : 'text-white/40'}`}
+                  >
+                      IT
+                  </Link>
+                <p className=''>|</p>
+                  <Link
+                      href={asPath}
+                      locale="en"
+                      className={`p-2 ${locale === 'it' ? 'text-white/40' : 'text-white/80 underline'}`}
+                  >
+                      ENG
+                  </Link>
+            </div>
+
+
+            <div className='flex flex-row flex-wrap items-center justify-center w-full px-2 pb-[2vh]'>
+
+                <Link href={"/facebook"}>
+                    <Image src={facebook} alt='Facebook' className='socialIconMenu' priority/>
+                </Link>
+                <Link href={"/instagram"}>
+                    <Image src={instagram} alt='Instagram' className='socialIconMenu' priority/>
+                </Link>
+                <Link href={"/spotify"}>
+                    <Image src={spotify} alt='Spotify' className='socialIconMenu' priority/>
+                </Link>
+                <Link href={"/youtube"}>
+                    <Image src={youtube} alt='YouTube' className='socialIconMenu' priority/>
+                </Link>
+                <Link href={"/apple"}>
+                    <Image src={apple} alt='Apple Music' className='socialIconMenu' priority/>
+                </Link>
+                <Link href={"/amazon"}>
+                    <Image src={amazon} alt='Amazon Music' className='socialIconMenu' priority/>
+                </Link>
+
+            </div>
+        </div>
+
+
+
+      </div>
 
     </>
   )

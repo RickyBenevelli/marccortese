@@ -13,6 +13,10 @@ Questo è il repository del sito web di Marc Cortese.
     * _document.jsx
     * index.jsx
 * public
+    * favicon
+    * icons
+    * images
+        * _(section images)_
 * styles
 
 
@@ -101,13 +105,30 @@ Ho aggiunto il componente (`DownloadButton`) per scaricare il file pdf. Ancora p
 
 Aggiunta la proprietà `backdrop-blur`alla Navbar così che sfochi quello che passa sotto. La NavBar l'ho poi spostata fuori dall' `ImageBackground`.
 
+Ho aggiunto la proprietà `imageBackground` al componente `PageLayout` per poter impostare un'immagine di sfondo diversa per ogni pagina.
 
-### viaggio to Tesero:
-- [ ] aggiungere menù mobile alla NavBar
-- [ ] creare i json per artisti e lavori
+Creato il nuovo componente `Layout.jsx` per aggiungere la favicon e il titolo della pagina.
+
+Creato il menù da mobile.
+
+Ho rimosso le icone dei social che importavo da react-icons e le ho sostituite con icone svg.
+
+```js
+// index.js
+    <Link href={"/facebook"}>
+        <FaFacebook className='socialIcon'/>
+        <Image src={facebook} alt='Facebook' className='socialIcon'/>
+    </Link>
+```
+
+Ho provato ad aggiungere il font Montserrat ma non funziona correttamente. Dovrò sistemarlo.
+
+Abbozzate le altre pagine. 
+
+Aggiunti i social anche al Footer. 
 
 
-
-## BUGS:
+# BUGS:
 - [ ] nella hommepage mettere tutte le dimensioni in funzione dell'altezza.
 - [ ] controllare se fa correttamente il change della location
+- [ ] sistemare font Montserrat

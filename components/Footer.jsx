@@ -11,11 +11,25 @@ import youtube from '@/public/icons/Youtube.svg'
 
 const Footer = () => {
   return (
-    <section className='w-full top-0 h-20 flex flex-row items-center mt-20 text-white px-10'>
-        <div className='w-2/5'>
+    <section className='w-full top-0  flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4'>
 
+        <div className='w-full sm:w-2/5 py-2'>
+          <div className='flex flex-col items-start justify-around pr-5 pt-4'> {/* CONTATTI */}
+            <h4>CONTATTI</h4>
+            <div className='flex flex-col w-full md:flex-row items-start text-xs md:justify-between'>
+              <div className='max-md:py-2'>
+                <p>Marc Cortese</p>
+                <p>marccortese@yahoo.com</p>
+              </div>
+              <div className='max-md:py-2'>
+                <p>Ben Fatto Media</p>
+                <p>benfattomgmt@gmail.com</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='w-1/5 text-center text-[0.5rem] lg:text-sm'>
+
+        <div className='max-sm:w-full sm:w-1/5 text-center text-[0.5rem] lg:text-sm py-2 max-sm:order-first'>
             <p>
                 &copy; Marc Cortese
             </p>
@@ -24,7 +38,7 @@ const Footer = () => {
             </p>
         </div>
 
-        <div className='w-2/5 flex flex-row items-center justify-around'>
+        <div className='w-full sm:w-2/5 flex flex-row items-center justify-between sm:justify-around py-2'>
           <Link href={"/facebook"}>
               <Image src={facebook} alt='Facebook' className='socialIconFooter'/>
             </Link>
