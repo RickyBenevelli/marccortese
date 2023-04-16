@@ -7,5 +7,5 @@ html {
 }
 
 .socialIcon {
-  @apply h-10 w-10 m-4 md:h-12 md:w-12 md:m-8 hover:fill-black duration-200 transition-colors ease-in-out;
+  @apply h-10 w-10 m-4 md:h-12 md:w-12 md:m-8 hover:fill-white/80 duration-200 transition-colors ease-in-out;
 }

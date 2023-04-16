@@ -100,3 +100,14 @@ export default PageLayout
 Ho aggiunto il componente (`DownloadButton`) per scaricare il file pdf. Ancora però non funziona.
 
 Aggiunta la proprietà `backdrop-blur`alla Navbar così che sfochi quello che passa sotto. La NavBar l'ho poi spostata fuori dall' `ImageBackground`.
+
+
+### viaggio to Tesero:
+- [ ] aggiungere menù mobile alla NavBar
+- [ ] creare i json per artisti e lavori
+
+
+
+## BUGS:
+- [ ] nella hommepage mettere tutte le dimensioni in funzione dell'altezza.
+- [ ] controllare se fa correttamente il change della location

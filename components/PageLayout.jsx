@@ -4,11 +4,11 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 import ImageBackground from './ImageBackground'
 
-const PageLayout = ({children}) => {
+const PageLayout = ({children, imageBackground}) => {
   return (
     <section className='flex flex-col items-center'>
         <NavBar />
-        <ImageBackground>
+        <ImageBackground imageBackground = {imageBackground}>
             {children}
             <Footer />
         </ImageBackground>

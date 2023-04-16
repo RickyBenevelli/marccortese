@@ -5,10 +5,11 @@ import PageLayout from '@/components/PageLayout'
 import PageTitle from '@/components/PageTitle'
 import DownloadButton from '@/components/DownloadButton'
 
+import imageBackground from '@/public/images/About.webp'
 
 const About = () => {
   return (
-    <PageLayout>
+    <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10'>
 
             <PageTitle>About</PageTitle>
