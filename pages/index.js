@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { Inter } from 'next/font/google'
 import { useRouter } from "next/router";
 
+import facebook from '@/public/icons/Facebook.svg'
 import amazon from '@/public/icons/Amazonmusic.svg'
 import apple from '@/public/icons/Applemusic.svg'
 import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
 import youtube from '@/public/icons/Youtube.svg'
-import facebook from '@/public/icons/Facebook.svg'
 
 const inter = Inter({ subsets: ['latin'] })
 import backgroundImage from '../public/images/Home.webp'

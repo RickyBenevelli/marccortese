@@ -10,8 +10,8 @@ const PageLayout = ({children, imageBackground}) => {
         <NavBar />
         <ImageBackground imageBackground = {imageBackground}>
             {children}
-            <Footer />
         </ImageBackground>
+        <Footer />
     </section>
   )
 }

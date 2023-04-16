@@ -22,7 +22,7 @@ const NavBar = () => {
           <div className='max-w-[1240px] w-full m-auto flex flex-row items-center justify-between'>
 
               <Link href={"/"}>
-                  <div className='m-2 text-white'>
+                  <div className='m-2 mx-5 text-white'>
                     <Image src={LOGO} alt="Marc Cortese" className='w-12 h-12' />
                   </div>
               </Link>

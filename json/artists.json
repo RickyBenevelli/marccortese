@@ -1,0 +1,8 @@
+[
+    {   
+        "id": "1",
+        "name": "Name Artist",
+        "image": "http://www.example.com/image.jpg",
+        "works": ["1", "2", "3"]
+    }
+]
