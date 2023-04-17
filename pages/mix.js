@@ -30,6 +30,8 @@ const Mix = () => {
       reset()
     }
     catch (error) {
+      console.log(error)
+      console.log('ERROR RECEVING IN CLIENT')
       setIsError(true)
       setIsSubmitted(false)
       reset()

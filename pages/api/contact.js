@@ -9,7 +9,7 @@ const handler = async(req, res) => {
     // Check if the data is valid
     if (!data.name || !data.email) {
       console.log('DATA NOT VALID')
-      return res.status(400).json({ message: 'Bad request' })
+      return res.status(400).json({ message: 'Bad request - data not valid' })
     }
 
     try {
@@ -34,7 +34,7 @@ const handler = async(req, res) => {
 
 
   console.log('NOT POST')
-  return res.status(400).json({ message: 'Bad request' })
+  return res.status(400).json({ message: 'Bad request - not post' })
 }
 
 export default handler
