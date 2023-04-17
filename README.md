@@ -8,6 +8,7 @@ Questo è il repository del sito web di Marc Cortese.
 * json
     * en.json
     * it.json
+* lib
 * pages
     * _app.jsx
     * _document.jsx
@@ -127,6 +128,12 @@ Abbozzate le altre pagine.
 
 Aggiunti i social anche al Footer. 
 
+
+Creo le pagine dei Form. 
+
+`yarn add react-hook-form` per gestire i form.
+
+`yarn add nodemailer` per inviare email.
 
 # BUGS:
 - [ ] nella hommepage mettere tutte le dimensioni in funzione dell'altezza.
