@@ -36,10 +36,10 @@ export default function Home() {
       <div className='flex flex-col max-w-3xl w-full h-full items-center justify-between py-[2vh] lg:py-[6vh] relative z-10 text-white'>
         <span className='text-center inline-block relative'>
           <h1 className={`text-4xl sm:text-5xl lg:text-6xl ${marcFont.className} pt-[4vh] lg:pt-5`}>Marc Cortese</h1>
-          <Image src={lineSvg} alt='' fill className='mt-12' priority/>
+          <Image src={lineSvg} alt='' fill className='mt-12 z-0' priority/>
         </span>
 
-        <ul className='grow text-2xl text-center font-light flex flex-col justify-around pt-[2vh]'>
+        <ul className='grow text-2xl text-center font-light flex flex-col justify-around pt-[2vh] z-10'>
           {
             menu.map((item, index) => {
               return (   

@@ -9,6 +9,9 @@ html {
 .socialIcon {
   @apply h-10 w-10 m-4 md:h-10 md:w-10 lg:mx-6 hover:fill-white/80 duration-200 transition-colors ease-in-out;
 }
+.socialIconContacts {
+  @apply h-10 w-10 m-4 md:h-10 md:w-10 lg:mx-6 hover:fill-white/80 duration-200 transition-colors ease-in-out;
+}
 .socialIconMenu {
   @apply h-[4vh] w-[4vh] mx-3 my-[2vh] hover:fill-white/80 duration-200 transition-colors ease-in-out;
 }

@@ -135,7 +135,106 @@ Creo le pagine dei Form.
 
 `yarn add nodemailer` per inviare email.
 
-# BUGS:
-- [ ] nella hommepage mettere tutte le dimensioni in funzione dell'altezza.
-- [ ] controllare se fa correttamente il change della location
-- [ ] sistemare font Montserrat
+Ho creato una funzione per gestire i l'invio della http request.
+```js
+// lib/api.js
+export const sendContactForm = async (data) => fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        },
+        body: JSON.stringify(data),
+    }).then((res) => {
+        if(!res.ok) {
+            console.log("ERRORE IN RISPOSTA AL CLIENT")
+            throw new Error("Failed to send email")
+        }
+        return res.json()
+    }
+    )
+    
+```
+
+L'endpoint  `/api/contact` gestisce la richiesta http e invia l'email.
+```js
+import { transporter, mailOptions } from "@/lib/nodemailer";
+
+const handler = async(req, res) => {
+
+  if (req.method === 'POST') {
+
+    const data = req.body;
+    // Check if the data is valid
+    if (!data.name || !data.email) {
+      console.log('DATA NOT VALID')
+      return res.status(400).json({ message: 'Bad request - data not valid' })
+    }
+
+    try {
+      console.log(data)
+      await transporter.sendMail({
+        ...mailOptions,
+        text: "This is text string",
+        html: `<div><p>Page: ${data.page}</p><p>Name: ${data.name}</p><p>Email: ${data.email}</p><p>Message: ${data.message}</p></div>`
+      })
+
+      return res.status(200).json({ message: 'Success' })
+    }
+    catch (error) {
+      console.log(error)
+      console.log('ERROR SENDING EMAIL')
+      return res.status(400).json({ message: error.message })
+    }
+
+  }
+
+
+  console.log('NOT POST')
+  return res.status(400).json({ message: 'Bad request - not post' })
+}
+
+export default handler
+```
+
+Nel file `nodemailer.js` ho importato il modulo `nodemailer` e ho creato un oggetto `transporter` per inviare l'email.
+```js
+import nodemailer from 'nodemailer';
+
+
+
+export const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASSWORD
+    }
+});
+
+export const mailOptions = {
+    from: process.env.EMAIL,
+    to: process.env.EMAIL_TO,
+    subject: 'New message from your website',
+    text: 'You have a new message from your website'
+};
+```
+
+Ho creato un file `.env.local` per salvare le credenziali di accesso al mio account gmail. Questo file non verrà mai caricato su github.
+
+Le variabili salvate sul file `.gitignore` sono: `EMAIL=`, `EMAIL_PASSWORD=`, `EMAIL_TO=`
+
+
+Ho scoperto che quando di utilizza getStaticPath, la struttura di ritorno deve essere quella. Il valore di `params` deve essere un oggetto con chiave uguale al nome del file.
+
+```js
+// works/[idAlbum].js
+export async function getStaticPaths() {
+  
+    const albumsId = albums.map((album) => ({ params: { idAlbum: album.idAlbum}}));
+
+  return {
+    paths: albumsId,
+    fallback: false,
+  };
+}
+```

@@ -1,43 +1,68 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
+import { useRouter } from "next/router";
 
 import PageLayout from '@/components/PageLayout'
 import PageTitle from '@/components/PageTitle'
-import DownloadButton from '@/components/DownloadButton'
+
+import facebook from '@/public/icons/Facebook.svg'
+import amazon from '@/public/icons/Amazonmusic.svg'
+import apple from '@/public/icons/Applemusic.svg'
+import instagram from '@/public/icons/Instagram.svg'
+import spotify from '@/public/icons/Spotify.svg'
+import youtube from '@/public/icons/Youtube.svg'
+
 
 import imageBackground from '@/public/images/Contacts.webp'
+import ContactForm from '@/components/ContactForm'
 
 const Contacts = () => {
+  
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10'>
 
-            <PageTitle>Contacts</PageTitle>
+          <PageTitle>Contacts</PageTitle>
 
-            <p className='text-lg py-5'>
-            Breve testo
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim Lorem ipsum dolor sit amet, consectetuer adipisc .
-            <br/>
-            Breve testo
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim Lorem ipsum dolor sit amet, consectetuer adipisc .
-            </p>
-            <div className='w-full text-center text-4xl font-light pt-10'>
-                <h2>ARRANGMENT</h2>
+          <div className='flex flex-col md:flex-row'>
+            <div className='md:w-1/2'>
+              <ContactForm />
+              <p>Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm Lorem ipsummm</p>
             </div>
-            
-            <p className='text-lg py-5'>
-            Breve testo
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim Lorem ipsum dolor sit amet, consectetuer adipisc .
-            </p>
 
-            <div className='w-full text-center text-4xl font-light pt-10'>
-                <h2>BEATS</h2>
+            <div className='md:w-1/2 flex flex-col item-center'>
+
+              <div className='flex flex-col item-center m-auto'>
+                <Link href={"/facebook"} className='flex flex-row items-center'>
+                  <Image src={facebook} alt='Facebook' className='socialIconContacts' priority/>
+                  <span className='text-lg'>Facebook</span>
+                </Link>
+                <Link href={"/instagram"}>
+                  <Image src={instagram} alt='Instagram' className='socialIconContacts' priority/>
+                </Link>
+                <Link href={"/spotify"}>
+                  <Image src={spotify} alt='Spotify' className='socialIconContacts' priority/>
+                </Link>
+                <Link href={"/youtube"}>
+                  <Image src={youtube} alt='YouTube' className='socialIconContacts' priority/>
+                </Link>
+                <Link href={"/apple"}>
+                  <Image src={apple} alt='Apple Music' className='socialIconContacts' priority/>
+                </Link>
+                <Link href={"/amazon"}>
+                  <Image src={amazon} alt='Amazon Music' className='socialIconContacts' priority/>
+                </Link>
+              </div>
+
+              <div className='flex flex-col'>
+                <p>Marc Cortese</p>
+                <p>Ben Fatto</p>
+              </div>
+
             </div>
-            
-            <p className='text-lg py-5'>
-            Breve testo
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim Lorem ipsum dolor sit amet, consectetuer adipisc .
-            </p>
+          </div>
+
 
         </div>
     </PageLayout>

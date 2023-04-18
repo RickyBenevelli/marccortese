@@ -1,10 +1,9 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { transporter, mailOptions } from "@/lib/nodemailer";
 
 const handler = async(req, res) => {
-  // console.log(req.body)
+
   if (req.method === 'POST') {
-    // Process a POST request
+
     const data = req.body;
     // Check if the data is valid
     if (!data.name || !data.email) {
@@ -13,8 +12,6 @@ const handler = async(req, res) => {
     }
 
     try {
-      // Send the data to your email provider
-      // await sendContactForm(data)
       console.log(data)
       await transporter.sendMail({
         ...mailOptions,
