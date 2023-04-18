@@ -10,6 +10,7 @@ import WorksGrid from '@/components/WorksGrid'
 
 import albums from '@/json/albums.json'
 import artists from '@/json/artists.json'
+import Link from 'next/link'
 
 const Works = () => {
     const albumsId = albums.map((album) => album.idAlbum);
@@ -25,8 +26,10 @@ const Works = () => {
             <div className='flex flex-col items-center pt-10'>
                 {artists.map((artist) => (
                     // aggiungere il link all'artista
-                    <div key={artist.idArtist}>
-                        <h2 className='font-light text-xl uppercase cursor-pointer'>{artist.name}</h2>
+                    <div key={artist.idArtist} className='py-2'>
+                        <Link href={`/artists/${artist.idArtist}`} className='hover:text-white/60'>
+                            <h2 className='font-light text-xl uppercase cursor-pointer'>{artist.name}</h2>
+                        </Link>
                     </div>
                 ))}
             </div>

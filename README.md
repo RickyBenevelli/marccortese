@@ -224,14 +224,14 @@ Ho creato un file `.env.local` per salvare le credenziali di accesso al mio acco
 Le variabili salvate sul file `.gitignore` sono: `EMAIL=`, `EMAIL_PASSWORD=`, `EMAIL_TO=`
 
 
-Ho scoperto che quando di utilizza getStaticPath, la struttura di ritorno deve essere quella. Il valore di `params` deve essere un oggetto con chiave uguale al nome del file.
+Ho scoperto che quando di utilizza getStaticPath, la struttura di ritorno deve essere quella. Il valore di `params` deve essere un oggetto con chiave uguale al nome del file. Utilizzo `locales` per generare le pagine in tutte le lingue.
+Da notare l'utilizzo di `flat()` per trasformare un array di array in un array semplice.
 
 ```js
 // works/[idAlbum].js
-export async function getStaticPaths() {
+export async function getStaticPaths({locales}) {
+  const albumsId = albums.map((album) => ( locales.map((locale) => ({ params: { idAlbum: album.idAlbum}, locale})))).flat();
   
-    const albumsId = albums.map((album) => ({ params: { idAlbum: album.idAlbum}}));
-
   return {
     paths: albumsId,
     fallback: false,
