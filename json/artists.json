@@ -2,16 +2,19 @@
     {
         "idArtist": "1",
         "name": "Artist 1",
+        "tracks": ["1", "2", "3", "4", "6"],
         "albums" : ["1", "2"]
     },
     {
         "idArtist": "2",
         "name": "Artist 2",
+        "tracks": ["4", "7", "8"],
         "albums" : ["3", "1"]
     },
     {
         "idArtist": "3",
         "name": "Artist 3",
+        "tracks": ["10", "11", "9", "5"],
         "albums" : ["4", "5", "6"]
     }
 ]

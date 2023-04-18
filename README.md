@@ -238,3 +238,7 @@ export async function getStaticPaths({locales}) {
   };
 }
 ```
+
+
+## IMPORTANTE:
+Ho aggiunto il campo `tracks` agli artisti. Bisognerà verificare che tutte le tracce di un artista siano contenute in quell'array. Anche quelle presenti in un album. Questo serve per consentire la collaborazione fra artisti ad un solo pezzo e non ad un intero album. 

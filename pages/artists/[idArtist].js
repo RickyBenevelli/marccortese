@@ -5,7 +5,6 @@ import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import imageBackground from '@/public/images/Works.webp'
 import {MdKeyboardArrowRight} from 'react-icons/md'
-import WorkCard from "@/components/WorkCard";
 import WorksGrid from "@/components/WorksGrid";
 
 import albums from "@/json/albums.json";
@@ -21,8 +20,7 @@ const ArtistPage = ({artist, artistAlbums}) => {
             <PageTitle>Artist</PageTitle>
             <div className="flex flex-row items-center pb-5">
                 <Link href={"/works"} className="flex flex-row items-center hover:text-white/60">
-                    <p className="font-light text-xl">Album</p> 
-                    {/* NOTE: non è corretto mettere Album qui sopra */}
+                    <p className="font-light text-xl">Artist</p> 
                     <MdKeyboardArrowRight className="w-8 h-8"/>
                 </Link>
                 <p className="font-light text-xl uppercase">

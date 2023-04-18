@@ -14,7 +14,7 @@ import Link from 'next/link'
 
 const Works = () => {
     const albumsId = albums.map((album) => album.idAlbum);
-    console.log(albumsId)
+    
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10 w-full'>

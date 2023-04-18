@@ -8,8 +8,11 @@ import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
 import youtube from '@/public/icons/Youtube.svg'
 import Link from 'next/link'
+import { stringify } from 'postcss'
 
-const WorkCard = ({album, artist, track}) => {
+import artists from '@/json/artists.json'
+
+const WorkCard = ({album, track}) => {
   return (
     <div className='flex flex-col sm:flex-row pb-10'>
         <div className='sm:w-1/3 relative aspect-square '>
@@ -53,7 +56,15 @@ const WorkCard = ({album, artist, track}) => {
             <div className='pt-4 md:pt-10 flex flex-col items-start'>
                 <h1 className='font-light text-4xl py-5 uppercase'>{track.title}</h1>
                 <div className='flex flex-col items-start text-lg'>
-                    <span>ARTISTS: {artist[0].name}</span>
+                    <span>ARTISTS:
+                        {track.artistsIds.map((item, index) => (
+                            <span className='px-2'>
+                                <Link href={`/artists/${item}`} key={index}>
+                                    {artists.find(artist => artist.idArtist === item).name}
+                                </Link>
+                            </span>
+                        ))}
+                    </span>
                     <span>PROD: {track.producer}</span>
                     <span>LIRYCS: {track.lirycs}</span>
                 </div>

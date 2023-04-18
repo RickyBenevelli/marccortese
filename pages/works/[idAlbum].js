@@ -12,7 +12,7 @@ import artists from "@/json/artists.json";
 import tracks from "@/json/tracks.json";
 import Link from "next/link";
 
-const AlbumPage = ({album, artist, tracksAlbum}) => {
+const AlbumPage = ({album, data}) => {
 
   return (
     <PageLayout imageBackground={imageBackground}>
@@ -32,8 +32,8 @@ const AlbumPage = ({album, artist, tracksAlbum}) => {
 
             {/*  */}
             {
-              tracksAlbum.map((track, index) => (
-                <WorkCard album={album} artist={artist} track={track} key={index}/>
+              data.map((track, index) => (
+                <WorkCard album={album} track={track} key={index}/>
 
               ))
             }
@@ -56,14 +56,24 @@ export async function getStaticPaths({locales}) {
 
 export async function getStaticProps({ params: {idAlbum} }) {
   const album = albums.find((album) => album.idAlbum === idAlbum);
-  const artist = artists.filter((artist) => artist.albums.includes(idAlbum)); 
+
   const tracksAlbum = tracks.filter((track) => album.tracks.includes(track.idTrack));
+  // aggiungere a tracksAlbum anche l'artista
+  const data = tracksAlbum.map((track) => {
+    const artist = artists.filter((artist) => artist.tracks.includes(track.idTrack));
+    const artistsIds = artist.map((artist) => artist.idArtist);
+    return {
+      ...track,
+      artistsIds
+    }
+  })
+
+  
 
   return{
     props: {
       album,
-      artist,
-      tracksAlbum
+      data
     }
   }
 }
