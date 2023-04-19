@@ -11,7 +11,7 @@ const ImageBackground = ({children, imageBackground}) => {
           }} priority/>
       </div>
 
-      <div className='h-full max-w-[1240px] w-full m-auto flex flex-col items-start pt-28 md:pt-40 relative z-10 text-white'>
+      <div className='h-full max-w-[1240px] w-full m-auto flex flex-col items-start pt-28 md:pt-40 relative z-10 text-white font-light'>
         {children}
       </div>
     </section>

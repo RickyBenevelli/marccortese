@@ -46,7 +46,7 @@ const ContactForm = () => {
           {errors.exampleRequired && <span>This field is required</span>}
           
           <span>
-            <input type="submit" placeholder='Send' value="Send" className='text-right py-2 md:py-4 cursor-pointer text-white'/>
+            <input type="submit" placeholder='Send' value="Send" className='text-right py-2 md:py-4 cursor-pointer text-white active:text-white/60'/>
           </span>
           <div className='w-full flex flex-col items-center text-center text-white'>
             {isSubmitted && <p>Thank you for contacting us</p>}

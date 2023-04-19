@@ -7,14 +7,22 @@ html {
 }
 
 .socialIcon {
-  @apply h-10 w-10 m-4 md:h-10 md:w-10 lg:mx-6 hover:fill-white/80 duration-200 transition-colors ease-in-out;
+  @apply h-10 w-10 m-4 md:h-10 md:w-10 lg:mx-6 hover:fill-white/60 duration-200 transition-colors ease-in-out;
 }
 .socialIconContacts {
-  @apply h-10 w-10 m-4 md:h-10 md:w-10 lg:mx-6 hover:fill-white/80 duration-200 transition-colors ease-in-out;
+  @apply h-10 w-10 m-4 md:h-10 md:w-10 lg:mx-6 hover:fill-white/60 duration-200 transition-colors ease-in-out;
 }
 .socialIconMenu {
   @apply h-[4vh] w-[4vh] mx-3 my-[2vh] hover:fill-white/80 duration-200 transition-colors ease-in-out;
 }
 .socialIconFooter {
-  @apply h-[7vw] w-[7vw] sm:h-5 sm:w-5 md:h-7 md:w-7 hover:fill-white/80 duration-200 transition-colors ease-in-out grow;
+  @apply h-[7vw] w-[7vw] sm:h-5 sm:w-5 md:h-7 md:w-7 hover:fill-white/60 duration-200 transition-colors ease-in-out grow;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
 }

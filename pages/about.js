@@ -24,13 +24,13 @@ const About = () => {
 
             <DownloadButton/>
             <div className='flex flex-col sm:flex-row'>
-                <div className='sm:w-1/3 py-4 sm:p-5'>
+                <div className='sm:w-1/4 py-4 sm:p-5 sm:pl-0'>
                     <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
                 </div>
-                <div className='sm:w-1/3 py-4 sm:p-5'>
+                <div className='sm:w-1/4 py-4 sm:p-5 sm:pl-0'>
                     <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
                 </div>
-                <div className='sm:w-1/3 py-4 sm:p-5'>
+                <div className='sm:w-1/4 py-4 sm:p-5 sm:pl-0'>
                     <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
                 </div>
             </div>

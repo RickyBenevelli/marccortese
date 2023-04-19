@@ -15,7 +15,7 @@ import artists from '@/json/artists.json'
 const WorkCard = ({album, track}) => {
   return (
     <div className='flex flex-col sm:flex-row pb-10'>
-        <div className='sm:w-1/3 relative aspect-square '>
+        <div className='sm:w-1/3  aspect-square '>
             <div className='relative aspect-square'>
                 <Image src={album.cover} alt='' fill style={{objectFit: 'cover'}} className='p-4 sm:p-0 sm:pt-2 sm:pr-2 md:pt-4 md:pr-4' />
 
@@ -58,7 +58,7 @@ const WorkCard = ({album, track}) => {
                 <div className='flex flex-col items-start text-lg'>
                     <span>ARTISTS:
                         {track.artistsIds.map((item, index) => (
-                            <span className='px-2'>
+                            <span className='px-2' key={index}>
                                 <Link href={`/artists/${item}`} key={index}>
                                     {artists.find(artist => artist.idArtist === item).name}
                                 </Link>

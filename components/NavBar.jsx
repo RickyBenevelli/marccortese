@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className='z-50 w-full fixed top-0 h-20 backdrop-blur flex flex-row items-center justify-between text-white'>
+      <nav className='z-50 w-full fixed top-0 h-20 backdrop-blur flex flex-row items-center justify-between text-white font-light'>
 
           <div className='max-w-[1240px] w-full m-auto flex flex-row items-center justify-between'>
 
@@ -51,7 +51,7 @@ const NavBar = () => {
                       }
                   </ul>
 
-              <div className='pr-5 pl-2 hidden md:flex flex-row text-sm items-center'>
+              <div className='pr-5 pl-2 hidden md:flex flex-row text-xs items-center'>
                   <Link
                       href={asPath}
                       locale="it"

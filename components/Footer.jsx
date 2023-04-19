@@ -11,13 +11,13 @@ import youtube from '@/public/icons/Youtube.svg'
 
 const Footer = () => {
   return (
-    <section className='w-full top-0  flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4'>
+    <section className='w-full max-w-[1240px] m-auto top-0  flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4'>
 
-        <div className='w-full sm:w-2/5 py-2'>
+        <div className='w-full sm:w-2/5 py-2 flex flex-row items-end'>
           <div className='flex flex-col items-start justify-around pr-5 pt-4'> {/* CONTATTI */}
             <h4>CONTATTI</h4>
             <div className='flex flex-col w-full md:flex-row items-start text-xs md:justify-between'>
-              <div className='max-md:py-2'>
+              <div className='max-md:py-2 mr-4'>
                 <p>Marc Cortese</p>
                 <p>marccortese@yahoo.com</p>
               </div>
@@ -27,6 +27,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div className='text-center'>
+            privacy policy
+          </div>
         </div>
 
         <div className='max-sm:w-full sm:w-1/5 text-center text-[0.5rem] lg:text-sm py-2 max-sm:order-first'>
@@ -34,7 +37,7 @@ const Footer = () => {
                 &copy; Marc Cortese
             </p>
             <p>
-                WEBSITE BY BENFATTO MEDIA
+                WEBSITE BY BEN FATTO MEDIA
             </p>
         </div>
 
