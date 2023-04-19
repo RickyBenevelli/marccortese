@@ -13,14 +13,35 @@ const About = () => {
         <div className='px-5 md:px-10'>
 
             <PageTitle>About</PageTitle>
-
-            <p className='text-lg py-5'>
-            Marc Cortese è un polistrumentista cresciuto negli Stati Uniti. Nel 2012 è sbarcato in Italia alla ricerca delle sue radici italiane. Questo lo ha portato a viaggiare in Italia ed in Europa, dove ha collaborato con vari gruppi sia come batterista che come cantante/front man. L’avvento del Covid, delle chiusure e delle restrizioni ha portato la sua attività musicale live a un blocco totale. Il suo rapporto con la musica si è quindi adattato a questa nuova situazione, ampliandosi anche alla scrittura, alla registrazione e alla produzione dei propri pezzi.
+            <div className='text-lg py-5'>
+            <p>
+            I am Marc Cortese and I am happy to welcome you to my website!
             <br/>
-            Il risultato di questi anni è “six songs”, il suo primo EP, uscito in ottobre 2022, interamente autoprodotto, dalla composizione agli strumenti alle voci fino alla postproduzione.
+            With over ten years of experience as a live performer, session musician, and artist in my own right, I've had the opportunity to play and record in different kinds of projects in varying genres and cultures.
             <br/>
-            Il suo genere spazia dal soul al pop psichedelico fino al pop sperimentale. Il primo video ufficiale della canzone “Oblivion”, prodotto da Ben Fatto media è uscito su YouTube il 15 novembre 2022.
+            Over the years, I have seen the same pattern play out. It goes something like this:
+            <br/>
+            <br/>
+            A band invests years of rehearsal time into a project. Finally they decide to record it and take it to a local studio. The recording process, consisting in blood sweat and tears on the part of the band, is met with a smugly aloof 'sound engineer' that is counting a clock, and who personally, couldn't give a shit about the project itself, as long as the money comes in. The band spends thousands on recording/production costs, but when the mix comes back, they are not happy with it. They ask for revisions and the studio says that revisions are not included in the price. The band, disheartened, finishes the project without even liking it. The project is never shown to the world. It collects digital dust on some forgotten hard disk.
+            <br/>
+            <br/>
+            I have been there unfortunately.
+            <br/>
+            And there is where my journey into the universe of music production began!
+            <br/>
+            <br/>
+            After years of study, research and experimentation with my own creations and those of others, I have arrived at an approach to production that is artist-centric. This means that for me to produce a song firstly entails getting into the head of the artist to understand what they want to communicate. Only after that can I implement the technical methods at mix-down that support and manifest that vision to the highest degree.
+            <br/>
+            <br/>
+            In creating this service I hope to offer:
             </p>
+            <ol className='list-decimal px-4'>
+                <li>Artists a safe place to be themselves and create freely</li>
+                <li>The technical knowhow for artists to craft their own sound while still being competitive and up to date with current industry standards.</li>
+                <li>Passion! Not the cold, soulless standardization so predominant in music production today.</li>
+                <li>Affordability (especially to smaller artists just getting started).</li>
+            </ol>
+            </div>
 
             <DownloadButton/>
             <div className='flex flex-col sm:flex-row'>
