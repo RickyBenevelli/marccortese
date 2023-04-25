@@ -4,6 +4,7 @@ import Image from 'next/image'
 import PageLayout from '@/components/PageLayout'
 import PageTitle from '@/components/PageTitle'
 import DownloadButton from '@/components/DownloadButton'
+import ContactForm from '@/components/ContactForm'
 
 import imageBackground from '@/public/images/Production.webp'
 
@@ -53,7 +54,8 @@ const Production = () => {
             Breve testo
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim Lorem ipsum dolor sit amet, consectetuer adipisc .
             </p>
-
+            
+            <ContactForm />
         </div>
     </PageLayout>
   )

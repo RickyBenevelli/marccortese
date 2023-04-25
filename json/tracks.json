@@ -9,7 +9,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -22,7 +23,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -35,7 +37,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -48,7 +51,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -61,7 +65,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -74,7 +79,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -87,7 +93,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -100,7 +107,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -113,7 +121,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -126,7 +135,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     },
     {
@@ -139,7 +149,8 @@
             "spotify": "http://spotify.com",
             "apple": "http://apple.com",
             "amazon": "http://amazon.com",
-            "youtube": "http://youtube.com"
+            "youtube": "http://youtube.com",
+            "deezer" : ""
         }
     }
 ]

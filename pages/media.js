@@ -12,7 +12,7 @@ const Media = ({images}) => {
   
   return (
     <PageLayout imageBackground={imageBackground}>
-        <div className='px-5 md:px-10'>
+        <div className='w-full px-5 md:px-10'>
 
           <PageTitle>Media</PageTitle>
 
@@ -20,19 +20,50 @@ const Media = ({images}) => {
             <h2>PHOTO GALLERY</h2>
           </div>
 
-          <div className='flex overflow-x-scroll hide-scroll-bar'>
-            <div className='flex flex-nowrap'>
+          {/* <div className='relative z-50 h-48 w-96'>
+            <Image src={`/media-images/im1.webp`} alt='' fill key={1} className=' object-contain'/>
+          </div> */}
 
-              {images.map((image, index) => (
-                <Image src={`/media-images/${image}`} alt='' width={300} height={250} key={index} className='inline-block m-4' style={{objectFit: 'cover'}}/>
-              ))}
+          <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+            <div class="flex flex-nowrap">
+              {/* {images.map((image, index) => (
+                // <Image src={`/media-images/${image}`} alt='' width={400} height={200} key={index} />
 
+               <div className='relative z-50 h-48 w-96'>
+                <Image src={`/media-images/${image}`} alt='' fill key={index} className=' object-contain'/>
+               </div>
+              ))} */}
+
+             {/* {images.map((image, index) => (
+                <div className='relative z-50 h-48 w-96 bg-white/20 border border-red-700' key={index}>
+                  <Image src={`/media-images/${image}`} alt='' width={400} height={200} key={index} className=' object-contain'/>
+                </div>
+              ))} */}
+              
             </div>
           </div>
-
-          <div className='w-full text-left text-4xl font-light pt-10'>
-            <h2>VIDEO</h2>
+          
+          <div className=''>
+            {images.map((image, index) => (
+              <div className='w-auto' key={index}>
+                <Image src={`/media-images/${image}`} alt='' height={200} width={400} key={index} className='object-contain'/>
+              </div>
+            ))}
           </div>
+
+          <div className='max-h-[200]'>
+            <Image src={"/media-images/im1.webp"} alt='' width={715} height={479} />
+          </div>
+          <div className='max-h-[200]'>
+            <Image src={"/media-images/im2.png"} alt='' width={1200} height={800} />
+          </div>
+          <div className='max-h-[200]'>
+            <Image src={"/media-images/im4.gif"} alt='' width={1920} height={1280} />
+          </div>
+          <div className='max-h-[200]'>
+            <Image src={"/media-images/joshua-kettle-lOE036FZECI-unsplash.jpg"} alt='' width={4767} height={7150} />
+          </div>
+
 
         </div>
     </PageLayout>
@@ -50,3 +81,10 @@ export async function getStaticProps() {
     }
   }
 }
+
+
+// {images.map((image, index) => (
+//   <div className='relative z-50 h-48 w-96 bg-white/20 border border-red-700' key={index}>
+//     <Image src={`/media-images/${image}`} alt='' width={400} height={200} key={index} className=' object-contain'/>
+//   </div>
+// ))}

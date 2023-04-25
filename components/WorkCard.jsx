@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 
-import facebook from '@/public/icons/Facebook.svg'
+
 import amazon from '@/public/icons/Amazonmusic.svg'
 import apple from '@/public/icons/Applemusic.svg'
-import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
 import youtube from '@/public/icons/Youtube.svg'
+import deezer from '@/public/icons/Deezer.svg'
 import Link from 'next/link'
 import { stringify } from 'postcss'
 
@@ -48,6 +48,13 @@ const WorkCard = ({album, track}) => {
                     <div className='px-4'>
                         <Link href={track.social.amazon}>
                             <Image src={amazon} alt="Amazon Music" className='w-10 h-10'/>
+                        </Link>
+                    </div>
+                }
+                {track.social.deezer &&
+                    <div className='px-4'>
+                        <Link href={track.social.deezer}>
+                            <Image src={deezer} alt="Deezer" className='w-10 h-10'/>
                         </Link>
                     </div>
                 }

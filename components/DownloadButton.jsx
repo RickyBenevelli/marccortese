@@ -15,7 +15,7 @@ function DownloadButton() {
     //     );
     //   };
   return (
-    <div className="py-5 text-2xl flex flex-row items-center cursor-pointer">
+    <div className="py-5 text-3xl flex flex-row items-center cursor-pointer uppercase italic">
       <p>Save File</p>
       <Image src={download} alt="" className="h-5 w-5 m-5" />
     </div>

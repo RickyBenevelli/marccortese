@@ -241,4 +241,26 @@ export async function getStaticPaths({locales}) {
 
 
 ## IMPORTANTE:
-Ho aggiunto il campo `tracks` agli artisti. Bisognerà verificare che tutte le tracce di un artista siano contenute in quell'array. Anche quelle presenti in un album. Questo serve per consentire la collaborazione fra artisti ad un solo pezzo e non ad un intero album. 
+Ho aggiunto il campo `tracks` agli artisti. Bisognerà verificare che tutte le tracce di un artista siano contenute in quell'array. Anche quelle presenti in un album. Questo serve per consentire la collaborazione fra artisti ad un solo pezzo e non ad un intero album.
+
+Ho rimosso la scroll bar laterale. 
+
+Ho aggiunto un delay nel caricamento delle immagini per applicare in modo "voluto" un effetto di blur
+
+```js
+import React, {useState} from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+const WorkGridElement = ({album}) => {
+    const [isLoading, setIsLoading] = useState(true)
+  return (
+    <Link href={`/works/${album.idAlbum}`} className={`relative aspect-square duration-500 ease-in-out ${isLoading ? "blur-lg grayscale scale-105" : "blur-0 scale-100 grayscale-0"}`}>
+        <Image src={album.cover} alt='' fill style={{objectFit: 'cover'}} onLoadingComplete={() => setIsLoading(false)}/>
+    </Link>
+  )
+}
+
+export default WorkGridElement
+```
+Bisogna verificare che piaccia a benni come effetto.
