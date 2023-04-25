@@ -28,8 +28,8 @@ const NavBar = () => {
 
           <div className='max-w-[1240px] w-full m-auto flex flex-row items-center justify-between'>
 
-              <Link href={"/"}>
-                  <div className='m-2 mx-5 text-white'>
+              <Link href={"/"} className='z-50'>
+                  <div className='m-2 mx-5 text-white z-[51]'>
                     <Image src={LOGO} alt="Marc Cortese" className='w-12 h-12' />
                   </div>
               </Link>
@@ -87,13 +87,13 @@ const NavBar = () => {
 
         <div className='flex flex-col w-full h-full pt-20 items-center justify-between text-white'>
 
-            <ul className='grow text-2xl text-center font-light flex flex-col justify-around pb-[2vh]'>
+            <ul className='grow text-[3vh] text-center font-light flex flex-col justify-around pb-[2vh]'>
             {
                 menu.map((item, index) => {
                 return (   
                     <li key={index} className='cursor-pointer'>
                     <Link href={`/${item}`} locale="it">
-                        <p className='p-2 capitalize hover:text-white/80 transition-all duration-100 ease-in'>{item}</p>
+                        <p className='capitalize hover:text-white/80 transition-all duration-100 ease-in'>{item}</p>
                     </Link>
                     </li>   
                 )
@@ -101,7 +101,7 @@ const NavBar = () => {
             }
             </ul>
 
-            <div className='flex flex-row text-sm items-center'>
+            <div className='flex flex-row text-[2vh] items-center'>
                   <Link
                       href={asPath}
                       locale="it"
