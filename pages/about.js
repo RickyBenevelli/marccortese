@@ -13,7 +13,7 @@ const About = () => {
         <div className='px-5 md:px-10'>
 
             <PageTitle>About</PageTitle>
-            <div className='text-lg py-5'>
+            <div className='text-base md:text-lg py-5'>
             <p>
             I am Marc Cortese and I am happy to welcome you to my website!
             <br/>
@@ -43,7 +43,7 @@ const About = () => {
             </ol>
             </div>
 
-            <DownloadButton/>
+            <DownloadButton text="DOWNLOAD PRESSKIT" file="/prova.pdf"/>
             <div className='flex flex-col sm:flex-row'>
                 <div className='sm:w-1/4 py-4 sm:p-5 sm:pl-0'>
                     <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
@@ -55,7 +55,7 @@ const About = () => {
                     <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
                 </div>
             </div>
-            <DownloadButton/>
+            <DownloadButton text="DOWNLOAD FOTO" file="/prova.pdf"/>
         </div>
     </PageLayout>
   )

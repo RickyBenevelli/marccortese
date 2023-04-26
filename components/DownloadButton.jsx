@@ -5,20 +5,18 @@ import React from "react";
 
 import download from "@/public/icons/Download.svg";
 
-const filePath = "/public/placeholder.png"
 
-function DownloadButton() {
-    // const saveFile = () => {
-    //     saveAs(
-    //       "filePath",
-    //       "example.png"
-    //     );
-    //   };
+function DownloadButton({text, file}) {
+  const handleDownload = () => {
+    const url = file;
+    window.open(url);
+  };
+
   return (
-    <div className="py-5 text-3xl flex flex-row items-center cursor-pointer uppercase italic">
-      <p>Save File</p>
+    <button onClick={handleDownload} className="py-5 text-3xl flex flex-row items-center cursor-pointer uppercase italic">
+      <p>{text}</p>
       <Image src={download} alt="" className="h-5 w-5 m-5" />
-    </div>
+    </button>
   );
 }
 
