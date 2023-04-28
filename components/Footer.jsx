@@ -18,12 +18,12 @@ const Footer = () => {
           <div className='w-full flex flex-col items-start justify-around sm:w-4/5 md:pr-5 md:pt-4'> {/* CONTATTI */}
             <div >
               <Link href={"/contacts"} className='flex flex-row items-center'>
-              <h4 className='text-[6vw] sm:text-[2vw]'>CONTATTI</h4>
-              <Image src={arrow} className='w-[6vw] h-[6vw] sm:w-[2vw] sm:h-[2vw] ml-[5vw] sm:ml-[2vw]' alt='' />
+              <h4 className='text-[6vw] sm:text-[2vw] xl:text-[25px]'>CONTATTI</h4>
+              <Image src={arrow} className='w-[6vw] h-[6vw] sm:w-[2vw] sm:h-[2vw] xl:w-[25px] xl:h-[25px] ml-[5vw] sm:ml-[2vw] xl:ml-[25px]' alt='' />
               </Link>
             </div>
 
-            <div className='grid grid-cols-2 w-full text-[3.5vw] sm:text-[1vw] pt-2 pb-2 sm:pb-0'>
+            <div className='grid grid-cols-2 w-full text-[3.5vw] sm:text-[1vw] xl:text-[13px] pt-2 pb-2 sm:pb-0'>
               <div className='text-left'>
                 <p>Marc Cortese</p>
                 <Link href="mailto:marccortese@yahoo.com">
@@ -39,17 +39,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='text-center text-xs sm:text-[1vw] sm:1/5 pt-1'>
+          <div className='text-center text-xs sm:text-[1vw] xl:text-[13px] sm:1/5 pt-1'>
             <p className=''>Cookie</p>
             <p className=''>Privacy Policy</p>
           </div>
         </div>
 
-        <div className='w-full sm:w-1/5 text-center text-[3.5vw] sm:text-[2vw] lg:text-sm py-2 max-sm:order-first font-light'>
+        <div className='w-full sm:w-1/5 text-center text-[3.5vw] sm:text-[2vw] xl:text-[14px] lg:text-sm py-2 max-sm:order-first font-light'>
             <p>
                 &copy; Marc Cortese
             </p>
-            <p className='sm:text-[1vw]'>
+            <p className='sm:text-[1vw] xl:text-[13px]'>
                 Website by BEN FATTO MEDIA
             </p>
         </div>
