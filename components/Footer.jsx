@@ -11,7 +11,7 @@ import arrow from '@/public/icons/Arrow.svg'
 
 const Footer = () => {
   return (
-    <section className='w-full max-w-[1240px] m-auto top-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4'>
+    <section className='w-full max-w-[1240px] m-auto top-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4 font-light'>
 
         <div className='w-full sm:w-2/5 py-2 flex flex-col md:flex-row items-end'>
           
@@ -23,7 +23,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className='grid grid-cols-2 w-full text-[3.5vw] pt-2'>
+            <div className='grid grid-cols-2 w-full text-[3.5vw] pt-2 pb-2'>
               <div className='text-left'>
                 <p>Marc Cortese</p>
                 <Link href="mailto:marccortese@yahoo.com">
@@ -39,17 +39,20 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='text-center text-xs'>
+          <div className='text-center text-xs py-1'>
             privacy policy
+          </div>
+          <div className='text-center text-xs py-1'>
+            Cookie
           </div>
         </div>
 
-        <div className='max-sm:w-full sm:w-1/5 text-center text-[1rem] lg:text-sm py-2 max-sm:order-first'>
+        <div className='w-full text-center text-[3.5vw] lg:text-sm py-2 max-sm:order-first font-light'>
             <p>
                 &copy; Marc Cortese
             </p>
             <p>
-                WEBSITE BY BEN FATTO MEDIA
+                Website by BEN FATTO MEDIA
             </p>
         </div>
 
