@@ -21,26 +21,25 @@ const Article = ({article}) => {
             <PageTitle>Blog</PageTitle>
 
             <div>
-                <h2 className="text-xl font-light py-2">
+                <h2 className="text-2xl md:text-4xl font-light py-2">
                     {article.title}
                 </h2>
-                <p>
+                <p className="uppercase text-sm font-light">
                     {dayjs(article.date).format('D MMMM YYYY')}
                 </p>
             </div>
-
-            <span>
-                READING TIME: {Math.round(readingTime(article.text).minutes)}
-            </span>
             
-            <div className="w-full flex flex-row">
-                <div className="w-2/3 pr-10 text-lg font-light">
+            <div className="w-full flex flex-col-reverse md:flex-row">
+                <div className="md:w-2/3 pr-10 text-base md:text-lg font-light">
                     {article.text}
                 </div>
 
-                <div className="w-1/3">
+                <div className="md:w-1/3 flex flex-col items-end">
                     <div className={`relative aspect-square duration-500 ease-in-out`}>
                         <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
+                    </div>
+                    <div className="uppercase text-sm font-light pt-5 pb-10">
+                      reading time: {Math.round(readingTime(article.text).minutes)}
                     </div>
                 </div>
             </div>

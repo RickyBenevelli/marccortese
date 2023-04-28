@@ -53,7 +53,7 @@ const WorkCard = ({album, track}) => {
             </div>
 
             <div className='pt-4 md:pt-10 flex flex-col items-start'>
-                <h1 className='font-light text-2xl md:text-4xl py-5 uppercase'>{track.title}</h1>
+                <h1 className='font-normal text-2xl md:text-4xl py-5 uppercase'>{track.title}</h1>
                 <div className='flex flex-col items-start text-lg'>
                     <div className='flex flex-row items-start'>
                         <div>
