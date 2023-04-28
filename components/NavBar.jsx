@@ -84,7 +84,7 @@ const NavBar = () => {
         </div>
         
 
-        <div className='flex flex-col w-full h-full pt-20 items-center justify-between text-white'>
+        <div className='flex flex-col w-full h-full pt-20 pb-[10vh] items-center justify-between text-white'>
 
             <ul className='grow text-[3vh] text-center font-light flex flex-col justify-around pb-[2vh]'>
             {
@@ -116,27 +116,6 @@ const NavBar = () => {
                   >
                       ENG
                   </Link>
-            </div>
-
-
-            <div className='flex flex-row flex-wrap items-center justify-center w-full px-2 pb-[2vh]'>
-
-                <Link href={"/facebook"}>
-                    <Image src={facebook} alt='Facebook' className='socialIconMenu' priority/>
-                </Link>
-                <Link href={"/instagram"}>
-                    <Image src={instagram} alt='Instagram' className='socialIconMenu' priority/>
-                </Link>
-                <Link href={"/spotify"}>
-                    <Image src={spotify} alt='Spotify' className='socialIconMenu' priority/>
-                </Link>
-                <Link href={"/youtube"}>
-                    <Image src={youtube} alt='YouTube' className='socialIconMenu' priority/>
-                </Link>
-                <Link href={"/apple"}>
-                    <Image src={apple} alt='Apple Music' className='socialIconMenu' priority/>
-                </Link>
-
             </div>
         </div>
 

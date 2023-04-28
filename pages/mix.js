@@ -27,7 +27,7 @@ const Mix = () => {
           Favorite Mixing Plugin Ins: Kramer Tape by Waves, Nectar by Izotope, CLA-76 Compressor by Waves
           </p>
         
-        <p>Contact me</p>
+          <p className='pt-5 md:pt-10'>Contact me</p>
 
         <ContactForm />
 

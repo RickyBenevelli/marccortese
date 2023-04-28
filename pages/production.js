@@ -70,10 +70,11 @@ const Production = () => {
             Logic X pro, Mixing, Mastering, Music Production, Songwriting. 30 euros per hour or 50 euros for a two hour block.
             </p>
 
-            <p className='text-base md:text-lg py-5'>
+            <p className='text-base md:text-lg pt-10'>
             Most of these services are subjective and the prices vary greatly depending on the situation. For more information on the process get in touch with me directly to discuss your idea.
             </p>
             
+            <p className='pt-5 md:pt-10'>Contact me</p>
             <ContactForm />
         </div>
     </PageLayout>

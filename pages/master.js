@@ -36,7 +36,7 @@ const Master = () => {
           Favorite Mastering Plugins: Ozone by Izotope, Abby Road TG Mastering Chain by Waves, RX Audio Editor by Izotope
           </p>
         
-        <p>Contact me</p>
+        <p className='pt-5 md:pt-10'>Contact me</p>
 
         <ContactForm />
 

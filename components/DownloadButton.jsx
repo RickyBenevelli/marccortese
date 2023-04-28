@@ -13,7 +13,7 @@ function DownloadButton({text, file}) {
   };
 
   return (
-    <button onClick={handleDownload} className="py-5 text-3xl flex flex-row items-center cursor-pointer uppercase italic">
+    <button onClick={handleDownload} className="py-5 text-xl md:text-3xl flex flex-row items-center cursor-pointer uppercase italic">
       <p>{text}</p>
       <Image src={download} alt="" className="h-5 w-5 m-5" />
     </button>
