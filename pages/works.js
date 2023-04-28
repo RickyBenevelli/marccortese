@@ -15,17 +15,17 @@ import Link from 'next/link'
 const Works = () => {
     const albumsId = albums.map((album) => album.idAlbum);
     const albumsSorted = albums.sort((a, b) => (new Date(b.date) - new Date(a.date)));
-    console.log(albumsSorted);
+    const artistSorted = artists.sort((a, b) => (a.name > b.name) ? 1 : -1);
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10 w-full'>
 
             <PageTitle>Works</PageTitle>
             
-            <WorksGrid albums={albums}/>
+            <WorksGrid albums={albumsSorted}/>
 
             <div className='flex flex-col items-center pt-10'>
-                {artists.map((artist) => (
+                {artistSorted.map((artist) => (
                     // aggiungere il link all'artista
                     <div key={artist.idArtist} className='py-2'>
                         <Link href={`/artists/${artist.idArtist}`} className='hover:text-white/60'>
