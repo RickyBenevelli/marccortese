@@ -34,13 +34,14 @@ const Article = ({article}) => {
                     {article.text}
                 </div>
 
-                <div className="md:w-1/3 flex flex-col items-end">
-                    <div className={`relative aspect-square duration-500 ease-in-out`}>
+                <div className="w-full md:w-1/3">
+                    <div className={`relative aspect-square`}>
                         <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
                     </div>
-                    <div className="uppercase text-sm font-light pt-5 pb-10">
+                    <div className="uppercase text-sm font-light pt-5 pb-10 text-right">
                       reading time: {Math.round(readingTime(article.text).minutes)}
                     </div>
+                    
                 </div>
             </div>
 
