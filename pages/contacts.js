@@ -26,9 +26,9 @@ const Contacts = () => {
 
           <div className='flex flex-col md:flex-row items-start'>
             <div className='md:w-1/2'>
+              <p>For general inquiries fill please fill out the form below</p>
+              <p className='pt-5 md:pt-10'>Contact me</p>
               <ContactForm />
-              <p>Lorem ipsum dolor sit amet. Quo velit temporibus est facere similique est odio nihil in asperiores nemo eum possimus velit et placeat dolor. Ut nesciunt saepe in consequatur tempore qui libero enim hic accusamus tempore aut soluta quia ea tempora fugit. Et rerum voluptatem vel nisi placeat quo libero sint et facilis commodi et quia quidem!
-              </p>
             </div>
 
             <div className='md:w-1/2 flex flex-col items-start max-md:pt-10'>

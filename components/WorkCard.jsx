@@ -53,10 +53,13 @@ const WorkCard = ({album, track}) => {
             </div>
 
             <div className='pt-4 md:pt-10 flex flex-col items-start'>
-                <h1 className='font-light text-4xl py-5 uppercase'>{track.title}</h1>
+                <h1 className='font-light text-2xl md:text-4xl py-5 uppercase'>{track.title}</h1>
                 <div className='flex flex-col items-start text-lg'>
-                    <span>ARTISTS:
-                        <span>
+                    <div className='flex flex-row items-start'>
+                        <div>
+                            ARTISTS:
+                        </div>
+                        <div>
                             {track.artistsIds.map((item, index) => (
                                 <span className='pl-2' key={index}>
                                     <Link href={`/artists/${item}`} key={index}>
@@ -65,8 +68,8 @@ const WorkCard = ({album, track}) => {
                                     </Link>
                                 </span>
                             ))}
-                        </span>
-                    </span>
+                        </div>
+                    </div>
                     <span>PROD: {track.producer}</span>
                     <span>LIRYCS: {track.lirycs}</span>
                 </div>
