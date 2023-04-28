@@ -11,7 +11,7 @@ import arrow from '@/public/icons/Arrow.svg'
 
 const Footer = () => {
   return (
-    <section className='w-full max-w-[1240px] m-auto top-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4 font-light'>
+    <section className='w-full max-w-[1240px] m-auto bottom-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4 font-light'>
 
         <div className='w-full sm:w-2/5 py-2 flex flex-col sm:flex-row items-end'>
           
