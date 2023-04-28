@@ -12,7 +12,7 @@ html {
   @apply h-[5vh] w-[5vh] mx-[2vh] md:mx-[4vh] my-[2vh] hover:fill-white/60 duration-200 transition-colors ease-in-out;
 }
 .socialIconContacts {
-  @apply h-10 w-10 m-4 md:h-10 md:w-10 lg:mx-6 hover:fill-white/60 duration-200 transition-colors ease-in-out;
+  @apply h-10 w-10 m-4 ml-0 md:h-10 md:w-10 lg:mx-6 hover:fill-white/60 duration-200 transition-colors ease-in-out;
 }
 .socialIconMenu {
   @apply h-[5vh] w-[5vh] mx-[2vw] md:mx-[4vh] my-[2vh] hover:fill-white/80 duration-200 transition-colors ease-in-out;

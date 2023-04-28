@@ -24,15 +24,15 @@ const Contacts = () => {
 
           <PageTitle>Contacts</PageTitle>
 
-          <div className='flex flex-col md:flex-row'>
+          <div className='flex flex-col md:flex-row items-start'>
             <div className='md:w-1/2'>
               <ContactForm />
               <p>Lorem ipsum dolor sit amet. Quo velit temporibus est facere similique est odio nihil in asperiores nemo eum possimus velit et placeat dolor. Ut nesciunt saepe in consequatur tempore qui libero enim hic accusamus tempore aut soluta quia ea tempora fugit. Et rerum voluptatem vel nisi placeat quo libero sint et facilis commodi et quia quidem!
               </p>
             </div>
 
-            <div className='md:w-1/2 flex flex-col item-center max-md:pt-10'>
-              <div className='flex flex-col item-left m-auto'>
+            <div className='md:w-1/2 flex flex-col items-start max-md:pt-10'>
+              <div className='flex flex-col items-start m-auto'>
                 
                 <Link href={"/facebook"} className='flex flex-row items-center text-lg'>
                   <Image src={facebook} alt='Facebook' className='socialIconContacts' priority/>
@@ -55,15 +55,19 @@ const Contacts = () => {
                   <span className='text-lg'>Apple Music</span>
                 </Link>
 
-                <div className='pl-4 lg:pl-6 text-lg'>
+                <div className='lg:pl-6 text-lg'>
                   <div className='py-2'>
                     <p>Marc Cortese</p>
-                    <p>marccortese@yahoo.com</p>
+                    <Link href="mailto:marccortese@yahoo.com">
+                      <p>marccortese@yahoo.com</p>
+                    </Link>
                   </div>
 
                   <div className='py-2'>
                     <p>Ben Fatto mgmt</p>
-                    <p>benfattomgmt@gmail.com</p>
+                    <Link href="mailto:benfattomgmt@gmail.com">
+                      <p>benfattomgmt@gmail.com</p>
+                    </Link>
                     <p>Tel. +39 389 6612652</p>
                   </div>
                 </div>

@@ -57,18 +57,16 @@ const WorkCard = ({album, track}) => {
                 <div className='flex flex-col items-start text-lg'>
                     <span>ARTISTS:
                         {track.artistsIds.map((item, index) => (
-                            <span className='px-2' key={index}>
+                            <span className='pl-2' key={index}>
                                 <Link href={`/artists/${item}`} key={index}>
                                     {artists.find(artist => artist.idArtist === item).name}
+                                    {index < track.artistsIds.length - 1 ? ', ' : ''}
                                 </Link>
                             </span>
                         ))}
                     </span>
                     <span>PROD: {track.producer}</span>
                     <span>LIRYCS: {track.lirycs}</span>
-                </div>
-                <div>
-                    <p className='py-5 font-light'>{track.description}</p>
                 </div>
             </div>
 
