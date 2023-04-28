@@ -14,7 +14,7 @@ const ArticleGridElement = ({article}) => {
                 <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
             </div>
         </div>
-        <button className='inline-block bg-white text-black px-2 my-2'>
+        <button className='inline-block bg-white text-black px-2 my-2 font-light text-sm'>
             <Link href={`/article/${article.slug}`}>
                 LEGGI ARTICOLO
             </Link>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
-import imageBackground from '@/public/images/Works.webp'
+import imageBackground from '@/public/images/Blog.webp'
 
 import readingTime from "reading-time";
 import dayjs from "dayjs";
@@ -24,13 +24,13 @@ const Article = ({article}) => {
                 <h2 className="text-2xl md:text-4xl font-light py-2">
                     {article.title}
                 </h2>
-                <p className="uppercase text-sm font-light">
+                <p className="uppercase text-sm font-light pb-5 md:pb-14">
                     {dayjs(article.date).format('D MMMM YYYY')}
                 </p>
             </div>
             
             <div className="w-full flex flex-col-reverse md:flex-row">
-                <div className="md:w-2/3 pr-10 text-base md:text-lg font-light">
+                <div className="md:w-2/3 md:pr-10 text-base md:text-lg font-light">
                     {article.text}
                 </div>
 

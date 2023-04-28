@@ -5,7 +5,6 @@ import PageLayout from '@/components/PageLayout'
 import PageTitle from '@/components/PageTitle'
 
 import imageBackground from '@/public/images/Blog.webp'
-import WorksGrid from '@/components/WorksGrid'
 
 
 import albums from '@/json/albums.json'
