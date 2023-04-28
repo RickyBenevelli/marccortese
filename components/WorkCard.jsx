@@ -16,7 +16,7 @@ const WorkCard = ({album, track}) => {
     <div className='flex flex-col sm:flex-row pb-10'>
         <div className='sm:w-1/3  aspect-square '>
             <div className='relative aspect-square'>
-                <Image src={album.cover} alt='' fill style={{objectFit: 'cover'}} className='p-4 sm:p-0 sm:pt-2 sm:pr-2 md:pt-4 md:pr-4' />
+                <Image src={album.cover} alt='' fill style={{objectFit: 'cover'}} className='py-4 sm:p-0 sm:pt-2 sm:pr-2 md:pt-4 md:pr-4' />
 
             </div>
         </div>

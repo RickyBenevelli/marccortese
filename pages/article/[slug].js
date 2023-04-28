@@ -38,7 +38,7 @@ const Article = ({article}) => {
                     <div className={`relative aspect-square`}>
                         <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
                     </div>
-                    <div className="uppercase text-sm font-light pt-5 pb-10 text-right">
+                    <div className="text-sm font-light pt-5 pb-10 text-right">
                       reading time: {Math.round(readingTime(article.text).minutes)}
                     </div>
                     

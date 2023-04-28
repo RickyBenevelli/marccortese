@@ -7,31 +7,44 @@ import apple from '@/public/icons/Applemusic.svg'
 import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
 import youtube from '@/public/icons/Youtube.svg'
+import arrow from '@/public/icons/Arrow.svg'
 
 const Footer = () => {
   return (
-    <section className='w-full max-w-[1240px] m-auto top-0  flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4'>
+    <section className='w-full max-w-[1240px] m-auto top-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4'>
 
-        <div className='w-full sm:w-2/5 py-2 flex flex-row items-end'>
-          <div className='flex flex-col items-start justify-around pr-5 pt-4'> {/* CONTATTI */}
-            <h4>CONTATTI</h4>
-            <div className='flex flex-col w-full md:flex-row items-start text-xs md:justify-between'>
-              <div className='max-md:py-2 mr-4'>
+        <div className='w-full sm:w-2/5 py-2 flex flex-col md:flex-row items-end'>
+          
+          <div className='w-full flex flex-col items-start justify-around md:pr-5 md:pt-4'> {/* CONTATTI */}
+            <div >
+              <Link href={"/contacts"} className='flex flex-row items-center'>
+              <h4 className='text-[6vw]'>CONTATTI</h4>
+              <Image src={arrow} className='w-[6vw] h-[6vw] ml-[5vw]' alt='' />
+              </Link>
+            </div>
+
+            <div className='grid grid-cols-2 w-full text-[3.5vw] pt-2'>
+              <div className='text-left'>
                 <p>Marc Cortese</p>
-                <p>marccortese@yahoo.com</p>
+                <Link href="mailto:marccortese@yahoo.com">
+                  <p>marccortese@yahoo.com</p>
+                </Link>
               </div>
-              <div className='max-md:py-2'>
+              <div className='text-right'>
                 <p>Ben Fatto Media</p>
-                <p>benfattomgmt@gmail.com</p>
+                <Link href="mailto:benfattomgmt@gmail.com">
+                  <p>benfattomgmt@gmail.com</p>
+                </Link>
               </div>
             </div>
           </div>
-          <div className='text-center'>
+
+          <div className='text-center text-xs'>
             privacy policy
           </div>
         </div>
 
-        <div className='max-sm:w-full sm:w-1/5 text-center text-[0.5rem] lg:text-sm py-2 max-sm:order-first'>
+        <div className='max-sm:w-full sm:w-1/5 text-center text-[1rem] lg:text-sm py-2 max-sm:order-first'>
             <p>
                 &copy; Marc Cortese
             </p>

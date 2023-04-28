@@ -18,7 +18,7 @@ html {
   @apply h-[5vh] w-[5vh] mx-[2vw] md:mx-[4vh] my-[2vh] hover:fill-white/80 duration-200 transition-colors ease-in-out;
 }
 .socialIconFooter {
-  @apply h-[7vw] w-[7vw] sm:h-5 sm:w-5 md:h-7 md:w-7 hover:fill-white/60 duration-200 transition-colors ease-in-out grow;
+  @apply h-[8vw] w-[8vw] sm:h-5 sm:w-5 md:h-7 md:w-7 hover:fill-white/60 duration-200 transition-colors ease-in-out grow;
 }
 
 .hide-scroll-bar {
