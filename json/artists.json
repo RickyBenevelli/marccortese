@@ -1,20 +1,38 @@
 [
     {
         "idArtist": "1",
-        "name": "Artist 1",
-        "tracks": ["1", "2", "3", "4", "6"],
-        "albums" : ["1", "2"]
+        "name": "marc cortese",
+        "tracks": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
+        "albums" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
     },
     {
         "idArtist": "2",
-        "name": "Artist 2",
-        "tracks": ["4", "7", "8"],
-        "albums" : ["3", "1"]
+        "name": "Notorious CZR",
+        "tracks": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "14", "17"],
+        "albums" : ["1", "2", "3", "4", "5", "6", "8", "11"]
     },
     {
         "idArtist": "3",
-        "name": "Artist 3",
-        "tracks": ["10", "11", "9", "5"],
-        "albums" : ["4", "5", "6"]
+        "name": "Alessandro Quarta",
+        "tracks": ["15", "16"],
+        "albums" : ["9", "10"]
+    },
+    {
+        "idArtist": "4",
+        "name": "giudimorale",
+        "tracks": ["13"],
+        "albums" : ["7"]
+    },
+    {
+        "idArtist": "5",
+        "name": "imvnyel",
+        "tracks": ["17"],
+        "albums" : ["11"]
+    },
+    {
+        "idArtist": "6",
+        "name": "Alice Dal Col",
+        "tracks": ["4", "11"],
+        "albums" : ["4", "6"]
     }
 ]

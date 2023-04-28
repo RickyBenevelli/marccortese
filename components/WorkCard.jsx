@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 
-import amazon from '@/public/icons/Amazonmusic.svg'
 import apple from '@/public/icons/Applemusic.svg'
 import spotify from '@/public/icons/Spotify.svg'
 import youtube from '@/public/icons/Youtube.svg'
@@ -41,13 +40,6 @@ const WorkCard = ({album, track}) => {
                     <div className='px-4'>
                         <Link href={track.social.apple}>
                             <Image src={apple} alt="Apple Music" className='w-10 h-10'/>
-                        </Link>
-                    </div>
-                }
-                {track.social.amazon &&
-                    <div className='px-4'>
-                        <Link href={track.social.amazon}>
-                            <Image src={amazon} alt="Amazon Music" className='w-10 h-10'/>
                         </Link>
                     </div>
                 }

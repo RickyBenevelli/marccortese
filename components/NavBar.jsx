@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import LOGO from '@/public/icons/LOGO.svg'
 import facebook from '@/public/icons/Facebook.svg'
-import amazon from '@/public/icons/Amazonmusic.svg'
 import apple from '@/public/icons/Applemusic.svg'
 import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
@@ -136,9 +135,6 @@ const NavBar = () => {
                 </Link>
                 <Link href={"/apple"}>
                     <Image src={apple} alt='Apple Music' className='socialIconMenu' priority/>
-                </Link>
-                <Link href={"/amazon"}>
-                    <Image src={amazon} alt='Amazon Music' className='socialIconMenu' priority/>
                 </Link>
 
             </div>

@@ -4,7 +4,7 @@ import ArticleGridElement from './ArticleGridElement'
 
 const ArticlesGrid = ({articles}) => {
   return (
-    <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-8 w-full'>
+    <div className='grid grid-cols-2 sm:grid-cols-3 gap-8 lg:gap-12 w-full'>
 
         {
           articles.map((article, index) => (

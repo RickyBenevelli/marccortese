@@ -7,7 +7,6 @@ import PageLayout from '@/components/PageLayout'
 import PageTitle from '@/components/PageTitle'
 
 import facebook from '@/public/icons/Facebook.svg'
-import amazon from '@/public/icons/Amazonmusic.svg'
 import apple from '@/public/icons/Applemusic.svg'
 import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
@@ -54,10 +53,6 @@ const Contacts = () => {
                 <Link href={"/apple"} className='flex flex-row items-center text-lg'>
                   <Image src={apple} alt='Apple Music' className='socialIconContacts' priority/>
                   <span className='text-lg'>Apple Music</span>
-                </Link>
-                <Link href={"/amazon"} className='flex flex-row items-center text-lg'>
-                  <Image src={amazon} alt='Amazon Music' className='socialIconContacts' priority/>
-                  <span className='text-lg'>Amazon Music</span>
                 </Link>
 
                 <div className='pl-4 lg:pl-6 text-lg'>

@@ -5,7 +5,6 @@ import localFont from '@next/font/local'
 import { useRouter } from "next/router";
 
 import facebook from '@/public/icons/Facebook.svg'
-import amazon from '@/public/icons/Amazonmusic.svg'
 import apple from '@/public/icons/Applemusic.svg'
 import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
@@ -70,9 +69,6 @@ export default function Home() {
           </Link>
           <Link href={"/apple"}>
             <Image src={apple} alt='Apple Music' className='socialIcon' priority/>
-          </Link>
-          <Link href={"/amazon"}>
-            <Image src={amazon} alt='Amazon Music' className='socialIcon' priority/>
           </Link>
 
         </div>

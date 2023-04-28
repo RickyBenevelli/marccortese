@@ -1,17 +1,24 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import dayjs from 'dayjs'
 
 const ArticleGridElement = ({article}) => {
     const [isLoading, setIsLoading] = useState(true)
   return (
     <div className='flex flex-col items-start'>
-        <h3>{article.title}</h3>
-        <p>{article.date}</p>
-        <div className={`relative aspect-square duration-500 ease-in-out`}>
-            <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
+        <h3 className='text-2xl my-0'>{article.title}</h3>
+        <span className='my-2 flex flex-row'>DATE: <p className='px-2'>{dayjs(article.date).format('DD/MM/YY')}</p></span>
+        <div className='w-full mb-5'>
+            <div className={`relative aspect-square duration-500 ease-in-out`}>
+                <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
+            </div>
         </div>
-        <button>LEGGI ARTICOLO</button>
+        <button className='inline-block bg-white text-black px-2 my-2'>
+            <Link href={`/article/${article.slug}`}>
+                LEGGI ARTICOLO
+            </Link>
+        </button>
     </div>
   )
 }

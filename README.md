@@ -21,6 +21,11 @@ Questo è il repository del sito web di Marc Cortese.
 * styles
 
 
+## TODO: 
+- [ ] favicon safari
+
+
+
 ## Development
 
 Dopo avere inizializzato il progetto con `yarn create next-app`, ho aggiunto le opzioni per l'i18n.

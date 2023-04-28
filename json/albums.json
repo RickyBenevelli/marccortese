@@ -1,44 +1,79 @@
 [
     {
         "idAlbum" : "1",
-        "titleAlbum" : "Album 1",
-        "cover" : "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bXVzaWNhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-        "date" : "2015-03-01",
-        "tracks": ["1", "2", "3", "4"]
+        "titleAlbum" : "suspicious issues",
+        "cover" : "/albums/suspicious-issues.webp",
+        "date" : "2022-07-01",
+        "tracks": ["1"]
     },
     {
         "idAlbum" : "2",
-        "titleAlbum" : "Album 2",
-        "cover" : "https://images.unsplash.com/photo-1458560871784-56d23406c091?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWNhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-        "date" : "2015-03-01",
-        "tracks": ["6"]
+        "titleAlbum" : "soul out the grave",
+        "cover" : "/albums/soul-out-the-grave.webp",
+        "date" : "2022-04-15",
+        "tracks": ["2"]
     },
     {
         "idAlbum" : "3",
-        "titleAlbum" : "Album 3",
-        "cover" : "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bXVzaWNhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-        "date" : "2015-03-01",
-        "tracks": ["7", "8"]
+        "titleAlbum" : "little promise",
+        "cover" : "/albums/little-promise.webp",
+        "date" : "2022-05-28",
+        "tracks": ["3"]
     },
     {
         "idAlbum" : "4",
-        "titleAlbum" : "Album 4",
-        "cover" : "https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2ljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-        "date" : "2015-03-01",
-        "tracks": ["9"]
+        "titleAlbum" : "i need a night",
+        "cover" : "/albums/i-need-a-night.webp",
+        "date" : "2022-07-25",
+        "tracks": ["4"]
     },
     {
         "idAlbum" : "5",
-        "titleAlbum" : "Album 5",
-        "cover" : "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG11c2ljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-        "date" : "2015-03-01",
-        "tracks": ["10", "11"]
+        "titleAlbum" : "wrong places",
+        "cover" : "/albums/wrong-places.webp",
+        "date" : "2022-08-19",
+        "tracks": ["5"]
     },
     {
         "idAlbum" : "6",
-        "titleAlbum" : "Album 6",
-        "cover" : "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG11c2ljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-        "date" : "2015-03-01",
-        "tracks": ["5"]
+        "titleAlbum" : "six songs",
+        "cover" : "/albums/six-songs.webp",
+        "date" : "2022-10-14",
+        "tracks": ["6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+        "idAlbum" : "7",
+        "titleAlbum" : "dicembre",
+        "cover" : "/albums/dicembre.webp",
+        "date" : "2022-12-18",
+        "tracks": ["13"]
+    },
+    {
+        "idAlbum" : "8",
+        "titleAlbum" : "m y n e w c a r",
+        "cover" : "/albums/my-new-car.webp",
+        "date" : "2022-12-16",
+        "tracks": ["14"]
+    },
+    {
+        "idAlbum" : "9",
+        "titleAlbum" : "voltiamoci le spalle",
+        "cover" : "/albums/voltiamoci-le-spalle.webp",
+        "date" : "2023-02-10",
+        "tracks": ["15"]
+    },
+    {
+        "idAlbum" : "10",
+        "titleAlbum" : "comparse",
+        "cover" : "/albums/comparse.webp",
+        "date" : "2023-03-18",
+        "tracks": ["16"]
+    },
+    {
+        "idAlbum" : "11",
+        "titleAlbum" : "rope",
+        "cover" : "/albums/rope.webp",
+        "date" : "2023-04-06",
+        "tracks": ["17"]
     }
 ]

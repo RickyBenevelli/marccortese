@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import facebook from '@/public/icons/Facebook.svg'
-import amazon from '@/public/icons/Amazonmusic.svg'
 import apple from '@/public/icons/Applemusic.svg'
 import instagram from '@/public/icons/Instagram.svg'
 import spotify from '@/public/icons/Spotify.svg'
@@ -57,9 +56,7 @@ const Footer = () => {
             <Link href={"/apple"}>
               <Image src={apple} alt='Apple Music' className='socialIconFooter'/>
             </Link>
-            <Link href={"/amazon"}>
-              <Image src={amazon} alt='Amazon Music' className='socialIconFooter'/>
-            </Link>
+
         </div>
     </section>
   )
