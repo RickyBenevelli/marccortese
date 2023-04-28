@@ -84,7 +84,7 @@ const NavBar = () => {
         </div>
         
 
-        <div className='flex flex-col w-full h-full pt-20 pb-[10vh] items-center justify-between text-white'>
+        <div className='flex flex-col w-full h-full pt-20 mb-[15vh] items-center justify-between text-white'>
 
             <ul className='grow text-[3vh] text-center font-light flex flex-col justify-around pb-[2vh]'>
             {
