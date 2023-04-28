@@ -55,19 +55,19 @@ export default function Home() {
 
         <div className='flex flex-row flex-wrap items-center justify-center w-full px-10'>
 
-          <Link href={"/facebook"}>
+          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"}>
             <Image src={facebook} alt='Facebook' className='socialIcon' priority/>
           </Link>
-          <Link href={"/instagram"}>
+          <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="}>
             <Image src={instagram} alt='Instagram' className='socialIcon' priority/>
           </Link>
-          <Link href={"/spotify"}>
+          <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"}>
             <Image src={spotify} alt='Spotify' className='socialIcon' priority/>
           </Link>
-          <Link href={"/youtube"}>
+          <Link href={"https://www.youtube.com/@marccortese"}>
             <Image src={youtube} alt='YouTube' className='socialIcon' priority/>
           </Link>
-          <Link href={"/apple"}>
+          <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"}>
             <Image src={apple} alt='Apple Music' className='socialIcon' priority/>
           </Link>
 

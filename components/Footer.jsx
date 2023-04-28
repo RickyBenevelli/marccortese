@@ -55,19 +55,19 @@ const Footer = () => {
         </div>
 
         <div className='w-full sm:w-2/5 flex flex-row items-center justify-between sm:justify-around py-2'>
-          <Link href={"/facebook"}>
+          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"}>
               <Image src={facebook} alt='Facebook' className='socialIconFooter'/>
             </Link>
-            <Link href={"/instagram"}>
+            <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="}>
               <Image src={instagram} alt='Instagram' className='socialIconFooter'/>
             </Link>
-            <Link href={"/spotify"}>
+            <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"}>
               <Image src={spotify} alt='Spotify' className='socialIconFooter'/>
             </Link>
-            <Link href={"/youtube"}>
+            <Link href={"https://www.youtube.com/@marccortese"}>
               <Image src={youtube} alt='YouTube' className='socialIconFooter'/>
             </Link>
-            <Link href={"/apple"}>
+            <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"}>
               <Image src={apple} alt='Apple Music' className='socialIconFooter'/>
             </Link>
 

@@ -5,11 +5,6 @@ import { useRouter } from 'next/router';
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import LOGO from '@/public/icons/LOGO.svg'
-import facebook from '@/public/icons/Facebook.svg'
-import apple from '@/public/icons/Applemusic.svg'
-import instagram from '@/public/icons/Instagram.svg'
-import spotify from '@/public/icons/Spotify.svg'
-import youtube from '@/public/icons/Youtube.svg'
 
 import menu from '@/json/menu.json'
 

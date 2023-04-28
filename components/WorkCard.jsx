@@ -20,7 +20,7 @@ const WorkCard = ({album, track}) => {
 
             </div>
         </div>
-        <div className='sm:w-2/3 flex-col px-4 lg:px-10'>
+        <div className='sm:w-2/3 flex-col md:px-4 lg:px-10'>
             <div className='relative flex flex-row pt-10 sm:pt-2 md:pt-4'>
                 {track.social.spotify &&
                     <div className='px-4 pl-0'>
