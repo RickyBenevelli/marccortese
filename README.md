@@ -23,7 +23,7 @@ Questo è il repository del sito web di Marc Cortese.
 
 ## TODO: 
 - [ ] favicon safari
-
+- [ ] riordinare albums
 
 
 ## Development

@@ -14,7 +14,8 @@ import Link from 'next/link'
 
 const Works = () => {
     const albumsId = albums.map((album) => album.idAlbum);
-    
+    const albumsSorted = albums.sort((a, b) => (new Date(b.date) - new Date(a.date)));
+    console.log(albumsSorted);
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10 w-full'>
