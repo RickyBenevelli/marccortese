@@ -79,13 +79,13 @@ const NavBar = () => {
         </div>
         
 
-        <div className='flex flex-col w-full h-full pt-20 mb-[15vh] items-center justify-between text-white'>
+        <div className='flex flex-col w-full h-full pt-20 mb-[15vh] items-center justify-start text-white'>
 
-            <ul className='grow text-[3vh] text-center font-light flex flex-col justify-around pb-[2vh]'>
+            <ul className='text-[3vh] text-center font-light flex flex-col justify-around pb-[2vh]'>
             {
                 menu.map((item, index) => {
                 return (   
-                    <li key={index} className='cursor-pointer'>
+                    <li key={index} className='cursor-pointer py-[2vh]'>
                     <Link href={`/${item}`} locale="it">
                         <p className='capitalize hover:text-white/80 transition-all duration-100 ease-in'>{item}</p>
                     </Link>
