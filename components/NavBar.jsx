@@ -85,9 +85,9 @@ const NavBar = () => {
             {
                 menu.map((item, index) => {
                 return (   
-                    <li key={index} className='cursor-pointer py-[2vh]'>
+                    <li key={index} className='cursor-pointer'>
                     <Link href={`/${item}`} locale="it">
-                        <p className='capitalize hover:text-white/80 transition-all duration-100 ease-in'>{item}</p>
+                        <p className='capitalize hover:text-white/80 transition-all duration-100 ease-in py-[1.5vh]'>{item}</p>
                     </Link>
                     </li>   
                 )

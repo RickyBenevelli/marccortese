@@ -32,17 +32,17 @@ export default function Home() {
           }} priority/>
       </div>
 
-      <div className='flex flex-col max-w-3xl w-full h-full items-center justify-between py-[2vh] lg:py-[6vh] relative z-10 text-white'>
+      <div className='flex flex-col max-w-3xl w-full h-full items-center justify-between pt-[4vh] pb-[8vh] lg:pt-[6vh] relative z-10 text-white'>
         <span className='text-center inline-block relative'>
           <h1 className={`text-[5vh] lg:text-[10vh] ${marcFont.className} pt-[4vh]`}>Marc Cortese</h1>
           <Image src={lineSvg} alt='' fill className='mt-[6vh] lg:mt-[8vh] z-0' priority/>
         </span>
 
-        <ul className='grow text-[3vh] text-center font-light flex flex-col justify-around pt-[4vh] z-10'>
+        <ul className='text-[3vh] text-center font-light flex flex-col justify-around pt-[4vh] z-10'>
           {
             menu.map((item, index) => {
               return (   
-                <li key={index} className='cursor-pointer'>
+                <li key={index} className='cursor-pointer py-[1vh]'>
                   <Link href={`/${item}`} locale="it">
                     <p className='capitalize hover:text-white/80 transition-all duration-100 ease-in'>{item}</p>
                   </Link>
@@ -53,22 +53,22 @@ export default function Home() {
         </ul>
 
 
-        <div className='flex flex-row flex-wrap items-center justify-center w-full px-10'>
+        <div className='grid grid-cols-5 gap-[8vw] w-full px-10 py-[5vh]'>
 
-          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"}>
-            <Image src={facebook} alt='Facebook' className='socialIcon' priority/>
+          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"} className='socialIcon'>
+            <Image src={facebook} alt='Facebook' priority/>
           </Link>
-          <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="}>
-            <Image src={instagram} alt='Instagram' className='socialIcon' priority/>
+          <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="} className='socialIcon'>
+            <Image src={instagram} alt='Instagram' priority/>
           </Link>
-          <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"}>
-            <Image src={spotify} alt='Spotify' className='socialIcon' priority/>
+          <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"} className='socialIcon'>
+            <Image src={spotify} alt='Spotify' priority/>
           </Link>
-          <Link href={"https://www.youtube.com/@marccortese"}>
-            <Image src={youtube} alt='YouTube' className='socialIcon' priority/>
+          <Link href={"https://www.youtube.com/@marccortese"} className='socialIcon'>
+            <Image src={youtube} alt='YouTube' priority/>
           </Link>
-          <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"}>
-            <Image src={apple} alt='Apple Music' className='socialIcon' priority/>
+          <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"} className='socialIcon'>
+            <Image src={apple} alt='Apple Music' priority/>
           </Link>
 
         </div>
