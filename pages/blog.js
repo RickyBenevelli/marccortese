@@ -16,6 +16,7 @@ import ArticlesGrid from '@/components/ArticlesGrid'
 
 const Blog = () => {
     // const albumsId = albums.map((album) => album.idAlbum);
+    const articlesSorted = articles.sort((a, b) => new Date(b.date) - new Date(a.date));
     
   return (
     <PageLayout imageBackground={imageBackground}>
@@ -23,7 +24,7 @@ const Blog = () => {
 
             <PageTitle>Blog</PageTitle>
             
-            <ArticlesGrid articles={articles}/>
+            <ArticlesGrid articles={articlesSorted}/>
 
         </div>
     </PageLayout>

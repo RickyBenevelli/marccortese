@@ -20,18 +20,18 @@ const Contacts = () => {
   
   return (
     <PageLayout imageBackground={imageBackground}>
-        <div className='px-5 md:px-10'>
+        <div className='px-5 md:px-10 w-full'>
 
           <PageTitle>Contacts</PageTitle>
 
-          <div className='flex flex-col md:flex-row items-start'>
-            <div className='md:w-1/2'>
-              <p>For general inquiries fill please fill out the form below</p>
+          <div className='w-full flex flex-col md:flex-row items-start'>
+            <div className='md:w-1/2 w-full'>
+              <p className='font-normal text-xl'>For general inquiries fill please fill out the form below</p>
               <p className='pt-5 md:pt-10'>Contact me</p>
               <ContactForm />
             </div>
 
-            <div className='md:w-1/2 flex flex-col items-start max-md:pt-10'>
+            <div className='md:w-1/2 flex flex-col items-start max-md:pt-10 w-full'>
               <div className='flex flex-col items-start m-auto'>
                 
                 <Link href={"/facebook"} className='flex flex-row items-center text-lg'>
