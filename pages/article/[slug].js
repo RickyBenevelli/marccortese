@@ -13,6 +13,9 @@ import dayjs from "dayjs";
 import articles from "@/json/articles.json";
 
 const Article = ({article}) => {
+  const createMarkup = () => {
+    return { __html: article.text };
+  };
 
   return (
     <PageLayout imageBackground={imageBackground}>
@@ -30,9 +33,7 @@ const Article = ({article}) => {
             </div>
             
             <div className="w-full flex flex-col-reverse md:flex-row">
-                <div className="md:w-2/3 md:pr-10 text-base md:text-lg font-light">
-                    {article.text}
-                </div>
+                <div className="md:w-2/3 md:pr-10 text-base md:text-lg font-light" dangerouslySetInnerHTML={createMarkup()}/>
 
                 <div className="w-full md:w-1/3">
                     <div className={`relative aspect-square`}>
