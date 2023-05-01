@@ -24,6 +24,8 @@ html {
 .hide-scroll-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+  -webkit-overflow-scrolling: touch;
 }
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;

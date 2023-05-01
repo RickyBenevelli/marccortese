@@ -26,13 +26,13 @@ const About = () => {
             <DownloadButton text="DOWNLOAD PRESSKIT" file="/prova.pdf"/>
             <div className='flex flex-col sm:flex-row'>
                 <div className='sm:w-1/4 py-4 sm:p-5 sm:pl-0'>
-                    <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
+                    <Image src='/about/1.webp' width={1200} height={800} alt='Cover' className=''/>
                 </div>
                 <div className='sm:w-1/4 py-4 sm:p-5 sm:pl-0'>
-                    <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
+                    <Image src='/about/2.webp' width={1200} height={800} alt='Cover' className=''/>
                 </div>
                 <div className='sm:w-1/4 py-4 sm:p-5 sm:pl-0'>
-                    <Image src='/placeholder.png' width={1200} height={800} alt='Cover' className=''/>
+                    <Image src='/about/3.webp' width={1200} height={800} alt='Cover' className=''/>
                 </div>
             </div>
             <DownloadButton text="DOWNLOAD FOTO" file="/prova.pdf"/>
