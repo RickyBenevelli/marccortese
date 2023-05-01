@@ -269,3 +269,5 @@ const WorkGridElement = ({album}) => {
 export default WorkGridElement
 ```
 Bisogna verificare che piaccia a benni come effetto.
+
+Aggiunto `image-size` per gestire le immagini.
