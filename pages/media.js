@@ -17,11 +17,17 @@ const Media = ({photos}) => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
+  const handleSelectedPhoto = (photo) => {
+    setSelectedPhoto(photo)
+    setIsLoading(true)
+  }
+
   const removeSelectedPhoto = () => {
     setSelectedPhoto(null)
     setIsLoading(true)
   }
-
+  console.log(selectedPhoto)
+  console.log("IS LOADING: " +isLoading)
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='w-full px-5 md:px-10'>
@@ -37,7 +43,7 @@ const Media = ({photos}) => {
               {photos.map((photo) => (
                 <div 
                 key={photo.src}
-                onClick={() => setSelectedPhoto(photo)}>
+                onClick={() => handleSelectedPhoto(photo)}>
                   <GalleryImage
                     src={photo.src}
                     width={photo.width}
@@ -53,7 +59,7 @@ const Media = ({photos}) => {
                   
                   <div onClick={() => setSelectedPhoto(null)} className={`relative w-full h-full m-auto `}>
                     
-                    <AiOutlineClose className='w-5 h-5 absolute top-0 text-white right-0 z-[55] cursor-pointer' onClick={() => removeSelectedPhoto}/>
+                    <AiOutlineClose className='w-5 h-5 absolute top-0 text-white right-0 z-[55] cursor-pointer' onClick={() => setSelectedPhoto(null)}/>
                     <Image src={selectedPhoto.src} alt="" fill style={{objectFit: 'contain'}} onLoadingComplete={() => setIsLoading(false)} />
                   
                   </div>
