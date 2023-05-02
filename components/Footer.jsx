@@ -45,12 +45,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='w-full sm:w-1/5 text-center text-[3.5vw] sm:text-[2vw] xl:text-[14px] lg:text-sm py-2 max-sm:order-first font-light'>
+        <div className='w-full sm:w-1/5 text-center text-[3.5vw] sm:text-[2vw] xl:text-[14px] lg:text-sm py-2 md:pb-1 max-sm:order-first font-light'>
             <p>
                 &copy; Marc Cortese
             </p>
             <p className='sm:text-[1vw] xl:text-[13px]'>
-                Website by BEN FATTO MEDIA
+                Designed by BEN FATTO MEDIA
+            </p>
+            <p className='sm:text-[1vw] xl:text-[13px]'>
+                Developed by <Link href={"https://www.riccardobenevelli.com"} className='font-medium'>Riccardo Benevelli</Link> 
             </p>
         </div>
 

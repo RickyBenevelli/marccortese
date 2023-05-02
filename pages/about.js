@@ -51,7 +51,7 @@ const About = () => {
             </p>
             </div>
 
-            <DownloadButton text="DOWNLOAD PRESSKIT" file="/prova.pdf"/>
+            <DownloadButton text="DOWNLOAD PRESSKIT" file="/Press Kit Marc Cortese - English.pdf"/>
             <div className='flex flex-col sm:flex-row'>
                 {photos.map((image) => (
                     <div key={image.url} 
