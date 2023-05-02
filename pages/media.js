@@ -26,8 +26,7 @@ const Media = ({photos}) => {
     setSelectedPhoto(null)
     setIsLoading(true)
   }
-  console.log(selectedPhoto)
-  console.log("IS LOADING: " +isLoading)
+
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='w-full px-5 md:px-10'>
@@ -69,6 +68,13 @@ const Media = ({photos}) => {
 
           </div>
 
+          <div className='w-full text-left text-4xl font-light pt-10'>
+            <h2>VIDEO GALLERY</h2>
+          </div>
+          
+          
+
+
         </div>
     </PageLayout>
   )
@@ -90,7 +96,8 @@ export async function getStaticProps() {
       height: dimensions.height
     };
   });
-
+  // inverti l'ordine delle foto
+  photos.reverse()
 
   return {
     props: {
