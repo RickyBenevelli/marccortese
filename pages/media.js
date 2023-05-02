@@ -99,13 +99,13 @@ const Media = ({photos}) => {
                     
                     <AiOutlineClose className='w-5 h-5 absolute top-0 text-white right-0 z-[55] cursor-pointer' onClick={() => setSelectedPhoto(null)}/>
                     
-                    <div className={`absolute top-[50%] translate-y-[-50%] translate-x-[-100%] z-[55] bg-slate-100/30 rounded-full cursor-pointer ${photos[0].src == selectedPhoto?.src ? "hidden" : ""}`} onClick={() => changePhoto(-1)}>
+                    <div className={`absolute top-[50%] translate-y-[-50%] z-[55] cursor-pointer ${photos[0].src == selectedPhoto?.src ? "hidden" : ""}`} onClick={() => changePhoto(-1)}>
                       <MdArrowBackIosNew className='w-6 h-6 m-4 '/>
                     </div>
 
                     <Image src={selectedPhoto.src} alt="" fill style={{objectFit: 'contain'}} onLoadingComplete={() => setIsLoading(false)} />
 
-                    <div className={`absolute top-[50%] right-0 translate-y-[-50%] translate-x-[100%] z-[65] bg-slate-100/30 rounded-full cursor-pointer ${photos[photos.length-1].src == selectedPhoto?.src ? "hidden" : ""}`} onClick={() => changePhoto(1)}>
+                    <div className={`absolute top-[50%] right-0 translate-y-[-50%]  z-[65] cursor-pointer ${photos[photos.length-1].src == selectedPhoto?.src ? "hidden" : ""}`} onClick={() => changePhoto(1)}>
                       <MdArrowForwardIos className='w-6 h-6 m-4 ' />
                     </div>
 
