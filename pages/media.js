@@ -13,6 +13,7 @@ import GalleryImage from '@/components/GalleryImage'
 
 
 import {AiOutlineClose } from "react-icons/ai";
+import {MdArrowBackIosNew, MdArrowForwardIos} from "react-icons/md";
 
 const videos = [
   { id: 'R_AswG9geqU' },
@@ -39,6 +40,12 @@ const Media = ({photos}) => {
     setIsLoading(true)
   }
 
+  const changePhoto = (direction) => {
+    const index = photos.findIndex((photo) => photo.src === selectedPhoto?.src)
+    setSelectedPhoto(photos[index + direction])
+    setIsLoading(true)
+  }
+
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='w-full px-5 md:px-10'>
@@ -51,7 +58,7 @@ const Media = ({photos}) => {
           
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10">
             {videos.map((video) => (
-              <div key={video.id} class="aspect-video">
+              <div key={video.id} className="aspect-video">
 
                 <iframe
                   src={`https://www.youtube.com/embed/${video.id}`}
@@ -86,13 +93,22 @@ const Media = ({photos}) => {
             
             {selectedPhoto && (
               <div className='absolute inset-0 bg-black bg-opacity-80 z-30'>
-                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 ${isLoading ? "blur-xl grayscale scale-105" : "blur-0 scale-100 grayscale-0"}`} onClick={() => setSelectedPhoto(null)}>
+                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 ${isLoading ? "blur-xl grayscale scale-105" : "blur-0 scale-100 grayscale-0"}`} >
                   
-                  <div onClick={() => setSelectedPhoto(null)} className={`relative w-full h-full m-auto `}>
+                  <div className={`relative w-full h-full m-auto `}>
                     
                     <AiOutlineClose className='w-5 h-5 absolute top-0 text-white right-0 z-[55] cursor-pointer' onClick={() => setSelectedPhoto(null)}/>
+                    
+                    <div className={`absolute top-[50%] translate-y-[-50%] translate-x-[-100%] z-[55] bg-slate-100/30 rounded-full cursor-pointer ${photos[0].src == selectedPhoto?.src ? "hidden" : ""}`} onClick={() => changePhoto(-1)}>
+                      <MdArrowBackIosNew className='w-6 h-6 m-4 '/>
+                    </div>
+
                     <Image src={selectedPhoto.src} alt="" fill style={{objectFit: 'contain'}} onLoadingComplete={() => setIsLoading(false)} />
-                  
+
+                    <div className={`absolute top-[50%] right-0 translate-y-[-50%] translate-x-[100%] z-[65] bg-slate-100/30 rounded-full cursor-pointer ${photos[photos.length-1].src == selectedPhoto?.src ? "hidden" : ""}`} onClick={() => changePhoto(1)}>
+                      <MdArrowForwardIos className='w-6 h-6 m-4 ' />
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -121,7 +137,7 @@ export async function getStaticProps() {
       height: dimensions.height
     };
   });
-  // inverti l'ordine delle foto
+
   photos.reverse()
 
   return {

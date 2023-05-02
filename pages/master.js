@@ -19,9 +19,12 @@ const Master = () => {
 
           <p className='text-lg py-5'>
           The final touch of mastering is important because it is what allows your song to translate across every form of playback.
+          <br/>
           Stereo mastering ( or 'traditional mastering' as its sometimes referred to):
           I will process a WAV file of your final mix preparing it for streaming platforms, enhancing the sound quality of the file as a whole, and pushing the level as high as it can go without compromising the naturalness of the recording.
+          <br/>
           Price: 30 euros Stem Mastering:
+          <br/>
           <br/>
           Stem mastering is another process where the final mix of your song is broken down into parts (i.e stems). This allows for more precision in the mastering stage and leads to a more nuanced, professional sounding result.
           <br/>

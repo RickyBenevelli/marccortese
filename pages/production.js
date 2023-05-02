@@ -18,7 +18,9 @@ const Production = () => {
             <p className='text-base md:text-lg py-5'>
             Do you have a great 'hook' for a song that you are having trouble developing? Maybe you have a song you want to add instrumentation to? Or maybe you just want to have someone produce a beat from scratch that will be all yours?
             <br/>
-            Well, if you find yourself in any of these scenarios you are in the right place! Services I offer:
+            Well, if you find yourself in any of these scenarios you are in the right place! 
+            <br />
+            Here are the services that I offer:
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
@@ -50,7 +52,7 @@ const Production = () => {
             </div>
             
             <p className='text-base md:text-lg py-5'>
-            Have you heard my golden voice (haha ;)) and thought to yourself- man, I need that voice on one of my tunes!! I will sing lead vocals, background vocals, voiceovers, ect. into my trusty Audio Tecnica AT4040 condenser mic! Also, if you are looking for female backing vocals I can organize to have them recorded with the lovely ladies I collaborate with on a regular basis in my studio.
+            Have you heard my golden voice (haha ;)) and thought to yourself- man, I need that voice on one of my tunes!! I will sing lead vocals, background vocals, voiceovers, ect. into my trusty Audio Tecnica AT4040 condenser mic! Also, if you are looking for female backing vocals I can organize to have them recorded with the talented singers that I work with on a regular basis in my studio.
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
@@ -67,7 +69,10 @@ const Production = () => {
             
             <p className='text-base md:text-lg py-5'>
             1-2-1 lessons
-            Logic X pro, Mixing, Mastering, Music Production, Songwriting. 30 euros per hour or 50 euros for a two hour block.
+            <br />
+            Logic X pro, Mixing, Mastering, Music Production, Songwriting. 
+            <br />
+            30 euros per hour or 50 euros for a two hour block.
             </p>
 
             <p className='text-base md:text-lg pt-10'>

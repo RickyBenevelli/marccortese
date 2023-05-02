@@ -71,7 +71,7 @@ const WorkCard = ({album, track}) => {
                         </div>
                     </div>
                     <span>PROD: {track.producer}</span>
-                    <span>LIRYCS: {track.lirycs}</span>
+                    <span>LYRICS: {track.lirycs}</span>
                 </div>
             </div>
 
