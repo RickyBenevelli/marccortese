@@ -4,6 +4,8 @@ import fs from 'fs';
 import sizeOf from 'image-size';
 import path from 'path'
 
+import YouTube from 'react-youtube';
+
 import PageLayout from '@/components/PageLayout'
 import PageTitle from '@/components/PageTitle'
 import imageBackground from '@/public/images/Media.webp'
@@ -11,6 +13,16 @@ import GalleryImage from '@/components/GalleryImage'
 
 
 import {AiOutlineClose } from "react-icons/ai";
+
+const videos = [
+  { id: 'R_AswG9geqU' },
+  { id: 'SyHB3mDU7W8' },
+  { id: 'jYDVZo9T9bY' },
+  { id: 'MKuuCG3bQKY' },
+  { id: 'WDBNh0YVXrw' },
+  { id: 'K63zdx3llwY' },
+  { id: 'ZzauRCKcyfs' }
+]
 
 
 const Media = ({photos}) => {
@@ -32,6 +44,27 @@ const Media = ({photos}) => {
         <div className='w-full px-5 md:px-10'>
 
           <PageTitle>Media</PageTitle>
+
+          <div className='w-full text-left text-4xl font-light pt-10'>
+            <h2>VIDEO GALLERY</h2>
+          </div>
+          
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10">
+            {videos.map((video) => (
+              <div key={video.id} class="aspect-video">
+
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.id}`}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className='w-full h-full'
+                ></iframe>
+
+              </div>
+            ))}
+          </div>
+
 
           <div className='w-full text-left text-4xl font-light pt-10'>
             <h2>PHOTO GALLERY</h2>
@@ -67,13 +100,6 @@ const Media = ({photos}) => {
             )}
 
           </div>
-
-          <div className='w-full text-left text-4xl font-light pt-10'>
-            <h2>VIDEO GALLERY</h2>
-          </div>
-          
-          
-
 
         </div>
     </PageLayout>

@@ -271,3 +271,5 @@ export default WorkGridElement
 Bisogna verificare che piaccia a benni come effetto.
 
 Aggiunto `image-size` per gestire le immagini.
+
+Aggiunto `yarn add react-youtube` per gestire i video di youtube.
