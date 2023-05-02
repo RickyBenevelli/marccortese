@@ -49,10 +49,13 @@ const Media = ({photos}) => {
             
             {selectedPhoto && (
               <div className='absolute inset-0 bg-black bg-opacity-80 z-30'>
-                <div className="fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50" onClick={() => setSelectedPhoto(null)}>
-                  <div onClick={() => setSelectedPhoto(null)} className={`relative w-full h-full m-auto ${isLoading ? "blur-xl grayscale scale-105" : "blur-0 scale-100 grayscale-0"}`}>
+                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 ${isLoading ? "blur-xl grayscale scale-105" : "blur-0 scale-100 grayscale-0"}`} onClick={() => setSelectedPhoto(null)}>
+                  
+                  <div onClick={() => setSelectedPhoto(null)} className={`relative w-full h-full m-auto `}>
+                    
                     <AiOutlineClose className='w-5 h-5 absolute top-0 text-white right-0 z-[55] cursor-pointer' onClick={() => removeSelectedPhoto}/>
                     <Image src={selectedPhoto.src} alt="" fill style={{objectFit: 'contain'}} onLoadingComplete={() => setIsLoading(false)} />
+                  
                   </div>
                 </div>
               </div>
