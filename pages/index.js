@@ -44,7 +44,7 @@ export default function Home() {
               return (   
                 <li key={index} className='cursor-pointer py-[1vh]'>
                   <Link href={`/${item}`} locale="it">
-                    <p className='capitalize hover:text-white/80 transition-all duration-100 ease-in'>{item}</p>
+                    <p className='capitalize hover:text-white/80 dark:text-white transition-all duration-100 ease-in'>{item}</p>
                   </Link>
                 </li>   
               )
