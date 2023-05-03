@@ -24,28 +24,28 @@ const WorkCard = ({album, track}) => {
             <div className='relative flex flex-row pt-10 sm:pt-2 md:pt-4'>
                 {track.social.spotify &&
                     <div className='px-4 pl-0'>
-                        <Link href={track.social.spotify}>
+                        <Link href={track.social.spotify} target="_blank">
                             <Image src={spotify} alt="Spotify" className='w-10 h-10'/>
                         </Link>
                     </div>
                 }
                 {track.social.youtube &&
                     <div className='px-4'>
-                        <Link href={track.social.youtube}>
+                        <Link href={track.social.youtube} target="_blank">
                             <Image src={youtube} alt="youtube" className='w-10 h-10'/>
                         </Link>
                     </div>
                 }
                 {track.social.apple &&
                     <div className='px-4'>
-                        <Link href={track.social.apple}>
+                        <Link href={track.social.apple} target="_blank">
                             <Image src={apple} alt="Apple Music" className='w-10 h-10'/>
                         </Link>
                     </div>
                 }
                 {track.social.deezer &&
                     <div className='px-4'>
-                        <Link href={track.social.deezer}>
+                        <Link href={track.social.deezer} target="_blank">
                             <Image src={deezer} alt="Deezer" className='w-10 h-10'/>
                         </Link>
                     </div>

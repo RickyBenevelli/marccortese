@@ -16,7 +16,7 @@ const ArticleGridElement = ({article}) => {
                 </div>
             </div>
             <button className='inline-block bg-white text-black px-4 py-2 my-2 font-light text-sm'>
-                LEGGI ARTICOLO
+                READ ARTICLE
             </button>
         </div>
     </Link>

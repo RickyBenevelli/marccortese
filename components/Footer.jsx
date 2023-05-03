@@ -17,7 +17,7 @@ const Footer = () => {
           
           <div className='w-full flex flex-col items-start justify-around sm:w-4/5 md:pr-5 md:pt-4'> {/* CONTATTI */}
             <div >
-              <Link href={"/contacts"} className='flex flex-row items-center'>
+              <Link href={"/contacts"} className='flex flex-row items-center' target="_blank">
               <h4 className='text-[6vw] sm:text-[2vw] xl:text-[25px]'>CONTATTI</h4>
               <Image src={arrow} className='w-[6vw] h-[6vw] sm:w-[2vw] sm:h-[2vw] xl:w-[25px] xl:h-[25px] ml-[5vw] sm:ml-[2vw] xl:ml-[25px]' alt='' />
               </Link>
@@ -40,8 +40,8 @@ const Footer = () => {
           </div>
 
           <div className='text-center text-xs sm:text-[1vw] xl:text-[13px] sm:1/5 pt-1'>
-            <p className=''>Cookie</p>
-            <p className=''>Privacy Policy</p>
+            <Link href="/cookie" className='' target="_blank">Cookie</Link>
+            <Link href="/privacy" className='' target="_blank">Privacy Policy</Link>
           </div>
         </div>
 
@@ -50,27 +50,27 @@ const Footer = () => {
                 &copy; Marc Cortese
             </p>
             <p className='sm:text-[1vw] xl:text-[13px]'>
-                Designed by BEN FATTO MEDIA
+                Designed by <p className='font-medium'>BEN FATTO MEDIA</p>
             </p>
             <p className='sm:text-[1vw] xl:text-[13px]'>
-                Developed by <Link href={"https://www.riccardobenevelli.com"} className='font-medium'>Riccardo Benevelli</Link> 
+                Developed by <Link href={"https://www.riccardobenevelli.com"} className='font-medium' target="_blank">Riccardo Benevelli</Link> 
             </p>
         </div>
 
         <div className='w-full sm:w-2/5 flex flex-row items-center justify-between sm:justify-around py-2'>
-          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"}>
+          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"} target="_blank">
               <Image src={facebook} alt='Facebook' className='socialIconFooter'/>
             </Link>
-            <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="}>
+            <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="} target="_blank">
               <Image src={instagram} alt='Instagram' className='socialIconFooter'/>
             </Link>
-            <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"}>
+            <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"} target="_blank">
               <Image src={spotify} alt='Spotify' className='socialIconFooter'/>
             </Link>
-            <Link href={"https://www.youtube.com/@marccortese"}>
+            <Link href={"https://www.youtube.com/@marccortese"} target="_blank">
               <Image src={youtube} alt='YouTube' className='socialIconFooter'/>
             </Link>
-            <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"}>
+            <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"} target="_blank">
               <Image src={apple} alt='Apple Music' className='socialIconFooter'/>
             </Link>
 

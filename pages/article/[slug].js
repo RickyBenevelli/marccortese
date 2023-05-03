@@ -40,7 +40,7 @@ const Article = ({article}) => {
                         <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
                     </div>
                     <div className="text-sm font-light pt-5 pb-10 text-right">
-                      reading time: {Math.round(readingTime(article.text).minutes)}
+                      Reading time: {Math.round(readingTime(article.text).minutes)}'
                     </div>
                     
                 </div>

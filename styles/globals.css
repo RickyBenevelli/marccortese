@@ -9,7 +9,7 @@ html {
 }
 
 .socialIcon {
-  @apply w-full max-w-[6vh] aspect-square m-auto duration-200 transition-colors ease-in-out;
+  @apply w-full max-w-[5vh] xl:max-w-[6vh] aspect-square m-auto duration-200 transition-colors ease-in-out;
 }
 .socialIconContacts {
   @apply h-10 w-10 m-4 ml-0 md:h-10 md:w-10 lg:mx-6 hover:fill-white/60 duration-200 transition-colors ease-in-out;

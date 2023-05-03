@@ -52,22 +52,21 @@ export default function Home() {
           }
         </ul>
 
-
         <div className='grid grid-cols-5 gap-[8vw] w-full px-10 py-[5vh]'>
 
-          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"} className='socialIcon'>
+          <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"} className='socialIcon' target="_blank">
             <Image src={facebook} alt='Facebook' priority/>
           </Link>
-          <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="} className='socialIcon'>
+          <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="} className='socialIcon' target="_blank">
             <Image src={instagram} alt='Instagram' priority/>
           </Link>
-          <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"} className='socialIcon'>
+          <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"} className='socialIcon' target="_blank">
             <Image src={spotify} alt='Spotify' priority/>
           </Link>
-          <Link href={"https://www.youtube.com/@marccortese"} className='socialIcon'>
+          <Link href={"https://www.youtube.com/@marccortese"} className='socialIcon' target="_blank">
             <Image src={youtube} alt='YouTube' priority/>
           </Link>
-          <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"} className='socialIcon'>
+          <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"} className='socialIcon' target="_blank">
             <Image src={apple} alt='Apple Music' priority/>
           </Link>
 
