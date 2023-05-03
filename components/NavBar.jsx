@@ -23,13 +23,13 @@ const NavBar = () => {
           <div className='max-w-[1240px] w-full m-auto flex flex-row items-center justify-between'>
 
               <Link href={"/"} className='z-50'>
-                  <div className='m-2 mx-5 text-white z-[51]'>
+                  <div className='m-2 mx-5 text-white dark:text-white z-[51]'>
                     <Image src={LOGO} alt="Marc Cortese" className='w-12 h-12' />
                   </div>
               </Link>
 
               {/* only on desktop */}
-              <ul className='grow flex-row text-white text-sm font-light xl:text-lg hidden md:flex justify-around lg:px-10'>
+              <ul className='grow flex-row text-white dark:text-white text-sm font-light xl:text-lg hidden md:flex justify-around lg:px-10'>
                   {
                       menu.map((item, index) => {
                           return (
@@ -73,13 +73,13 @@ const NavBar = () => {
       </nav>
 
       {/* tendina del menù mobile */}
-      <div className={`fixed top-0 bottom-0 w-screen h-screen bg-black/90 z-50 md:hidden ${isOpen ? "" : "hidden"} transition-all ease-in-out duration-700`}>
+      <div className={`fixed top-0 bottom-0 w-screen h-screen bg-black/90 dark:bg-black/90 z-50 md:hidden ${isOpen ? "" : "hidden"} transition-all ease-in-out duration-700`}>
         <div className='fixed max-w-[1240px] w-full m-auto flex flex-row items-center justify-end'>
             {isOpen && <AiOutlineClose className='w-10 h-10 fill-white m-5 transition-all ease-in duration-200' onClick={toggleMenu}/>}
         </div>
         
 
-        <div className='flex flex-col w-full h-full pt-20 mb-[15vh] items-center justify-start text-white'>
+        <div className='flex flex-col w-full h-full pt-20 mb-[15vh] items-center justify-start text-white dark:text-white'>
 
             <ul className='text-[3vh] text-center font-light flex flex-col justify-around pb-[2vh]'>
             {
