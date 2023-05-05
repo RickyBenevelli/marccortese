@@ -73,7 +73,7 @@ const NavBar = () => {
       </nav>
 
       {/* tendina del menù mobile */}
-      <div className={`fixed top-0 bottom-0 w-screen h-screen bg-black/90 dark:bg-black/90 z-50 md:hidden ${isOpen ? "" : "hidden"} transition-all ease-in-out duration-700`}>
+      <div className={`fixed w-screen h-screen bg-black/90 dark:bg-black/90 z-50 md:hidden ${isOpen ? "right-0" : "right-[-100%]"} transition-all duration-100`}>
         <div className='fixed max-w-[1240px] w-full m-auto flex flex-row items-center justify-end'>
             {isOpen && <AiOutlineClose className='w-10 h-10 fill-white m-5 transition-all ease-in duration-200' onClick={toggleMenu}/>}
         </div>

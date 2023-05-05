@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,12 +9,20 @@ import imageBackground from '@/public/images/Blog.webp'
 
 import readingTime from "reading-time";
 import dayjs from "dayjs";
+import {AiOutlineClose } from "react-icons/ai";
 
 import articles from "@/json/articles.json";
 
 const Article = ({article}) => {
+  const [openImage, setOpenImage] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const createMarkup = () => {
     return { __html: article.text };
+  };
+
+  const toggleImage = () => {
+    setOpenImage(!openImage);
+    setIsLoading(true);
   };
 
   return (
@@ -37,7 +45,7 @@ const Article = ({article}) => {
 
                 <div className="w-full md:w-1/3">
                     <div className={`relative aspect-square`}>
-                        <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} />
+                        <Image src={article.cover} alt='' fill style={{objectFit: 'cover'}} onClick={toggleImage} />
                     </div>
                     <div className="text-sm font-light pt-5 pb-10 text-right">
                       Reading time: {Math.round(readingTime(article.text).minutes)}'
@@ -45,6 +53,21 @@ const Article = ({article}) => {
                     
                 </div>
             </div>
+
+            {openImage && (
+              <div className='absolute inset-0 bg-black bg-opacity-80 z-30'>
+                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 ${isLoading ? "blur-xl grayscale" : "blur-0 grayscale-0"}`} >
+                  
+                  <div className={`relative w-full h-full m-auto `}>
+                    
+                    <AiOutlineClose className='w-5 h-5 absolute top-0 text-white right-0 z-[55] cursor-pointer' onClick={toggleImage}/>
+
+                    <Image src={article.cover} alt="" fill style={{objectFit: 'contain'}} onLoadingComplete={() => setIsLoading(false)} />
+
+                  </div>
+                </div>
+              </div>
+            )}
 
         </div>
     </PageLayout>

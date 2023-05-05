@@ -8,7 +8,7 @@ const ArticleGridElement = ({article}) => {
   return (
     <Link href={`/article/${article.slug}`}>
         <div className='flex flex-col items-start'>
-            <h3 className='text-2xl my-0'>{article.title}</h3>
+            <h3 className='text-2xl my-0 uppercase'>{article.title}</h3>
             <span className='my-2 flex flex-row'>DATE: <p className='px-2'>{dayjs(article.date).format('DD/MM/YY')}</p></span>
             <div className='w-full mb-5'>
                 <div className={`relative aspect-square duration-500 ease-in-out`}>

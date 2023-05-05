@@ -11,7 +11,7 @@ import arrow from '@/public/icons/Arrow.svg'
 
 const Footer = () => {
   return (
-    <section className='w-full max-w-[1240px] m-auto bottom-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4 font-light'>
+    <section className='w-full max-w-[1240px] mx-auto bottom-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4 font-light'>
 
         <div className='w-full sm:w-2/5 py-2 flex flex-col sm:flex-row items-end'>
           
@@ -49,11 +49,11 @@ const Footer = () => {
             <p>
                 &copy; Marc Cortese
             </p>
-            <p className='sm:text-[1vw] xl:text-[13px]'>
-                Designed by <p className='font-medium'>BEN FATTO MEDIA</p>
+            <p className='sm:text-[1vw] xl:text-[12.75px]'>
+                Designed by <p className='font-medium inline'>BEN FATTO MEDIA</p>
             </p>
-            <p className='sm:text-[1vw] xl:text-[13px]'>
-                Developed by <Link href={"https://www.riccardobenevelli.com"} className='font-medium' target="_blank">Riccardo Benevelli</Link> 
+            <p className='sm:text-[1vw] xl:text-[12.75px]'>
+                Developed by <Link href={"https://www.riccardobenevelli.com"} className='font-medium inline' target="_blank">Riccardo Benevelli</Link> 
             </p>
         </div>
 
