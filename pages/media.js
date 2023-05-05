@@ -92,7 +92,7 @@ const Media = ({photos}) => {
             </div>
             
             {selectedPhoto && (
-              <div className='absolute inset-0 bg-black bg-opacity-80 z-30'>
+              <div className='absolute inset-0 mt-20 bg-black bg-opacity-80 z-30'>
                 <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 `} >
                   
                   <div className={`relative w-full h-full m-auto `}>

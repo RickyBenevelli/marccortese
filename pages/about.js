@@ -15,15 +15,13 @@ const photos = [
   ];
   
   const handleDownloadMultiple = () => {
-    photos.forEach((photo) => {
-      const link = document.createElement('a');
-      link.href = photo.url;
-      link.download = photo.name;
-      link.textContent = photo.name;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
+    const link = document.createElement('a');
+    link.href = '/public/about/Archivio.zip';
+    link.download = 'Archivio.zip';
+    link.textContent = 'Download ZIP';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
 const About = () => {
