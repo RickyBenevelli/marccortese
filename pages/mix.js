@@ -13,11 +13,11 @@ const Mix = () => {
   
   return (
     <PageLayout imageBackground={imageBackground}>
-        <div className='px-5 md:px-10'>
+        <div className='px-5 md:px-10 text-base md:text-lg'>
 
           <PageTitle>Mix</PageTitle>
 
-          <p className='text-lg py-5'>
+          <p className='py-5'>
           Mixing is a creative process and every song is different. Because of this, there is no 'one size fits all' price for my mixing services.
           <br/>
           First send me an MP3 of the rough mix/demo version of your song as well as a brief description of what DAW you are using, how many tracks/stems there are in the project, and how you would like the end result to sound.

@@ -13,11 +13,11 @@ const Master = () => {
   
   return (
     <PageLayout imageBackground={imageBackground}>
-        <div className='px-5 md:px-10'>
+        <div className='px-5 md:px-10 text-base md:text-lg'>
 
           <PageTitle>Master</PageTitle>
 
-          <p className='text-lg py-5'>
+          <p className='py-5'>
           The final touch of mastering is important because it is what allows your song to translate across every form of playback.
           <br/>
           Stereo mastering ( or 'traditional mastering' as its sometimes referred to):

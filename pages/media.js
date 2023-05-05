@@ -93,7 +93,7 @@ const Media = ({photos}) => {
             
             {selectedPhoto && (
               <div className='absolute inset-0 bg-black bg-opacity-80 z-30'>
-                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 ${isLoading ? "blur-xl grayscale scale-105" : "blur-0 scale-100 grayscale-0"}`} >
+                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 ${isLoading ? "blur-xl grayscale" : "blur-0 grayscale-0"}`} >
                   
                   <div className={`relative w-full h-full m-auto `}>
                     
