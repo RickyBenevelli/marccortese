@@ -93,7 +93,7 @@ const Media = ({photos}) => {
             
             {selectedPhoto && (
               <div className='absolute inset-0 bg-black bg-opacity-80 z-30'>
-                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 ${isLoading ? "blur-xl grayscale" : "blur-0 grayscale-0"}`} >
+                <div className={`fixed inset-x-[10vw] inset-y-[12vh] flex justify-center items-center bg-opacity-80 z-50 `} >
                   
                   <div className={`relative w-full h-full m-auto `}>
                     
@@ -103,7 +103,7 @@ const Media = ({photos}) => {
                       <MdArrowBackIosNew className='w-6 h-6 m-4 '/>
                     </div>
 
-                    <Image src={selectedPhoto.src} alt="" fill style={{objectFit: 'contain'}} onLoadingComplete={() => setIsLoading(false)} />
+                    <Image src={selectedPhoto.src} alt="" fill style={{objectFit: 'contain'}} onLoadingComplete={() => setIsLoading(false)} className={`${isLoading ? "blur-xl grayscale" : "blur-0 grayscale-0"}`}/>
 
                     <div className={`absolute top-[50%] right-0 translate-y-[-50%]  z-[65] cursor-pointer ${photos[photos.length-1].src == selectedPhoto?.src ? "hidden" : ""}`} onClick={() => changePhoto(1)}>
                       <MdArrowForwardIos className='w-6 h-6 m-4 ' />

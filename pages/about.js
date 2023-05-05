@@ -34,6 +34,7 @@ const About = () => {
         link.href = image.url;
         link.download = `${image.url}`;
         link.click();
+        setHoveredImage(null);
     };
 
   return (
@@ -60,23 +61,23 @@ const About = () => {
                         onMouseLeave={() => setHoveredImage(null)}
                         >
                         <div 
-                            className={`relative flex flex-col items-center cursor-pointer`}
-                            onClick={() => handleDownload(image)}
-                            >
+                          className={`relative flex flex-col items-center cursor-pointer`}
+                          onClick={() => handleDownload(image)}
+                          >
 
-                            <Image
-                                src={image.url}
-                                width={1200}
-                                height={800}
-                                alt={`Image ${image.name}`}
-                                className={`${hoveredImage === image.url ? 'brightness-50' : ""}`}
-                                />
+                          <Image
+                              src={image.url}
+                              width={1200}
+                              height={800}
+                              alt={`Image ${image.name}`}
+                              className={`${hoveredImage === image.url ? 'brightness-50' : ""}`}
+                              />
 
-                            {hoveredImage === image.url && (
+                          {hoveredImage === image.url && (
 
-                                <Image src={download} alt="" className="h-10 w-10 top-[50%] left-[50%] absolute translate-x-[-50%] translate-y-[-50%] brightness-100"/>
-                                
-                                )}
+                              <Image src={download} alt="" className="h-10 w-10 top-[50%] left-[50%] absolute translate-x-[-50%] translate-y-[-50%] brightness-100"/>
+                              
+                              )}
                         </div>
                     </div>
                 ))}
