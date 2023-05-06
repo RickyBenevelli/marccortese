@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 import PageLayout from '@/components/PageLayout'
 import PageTitle from '@/components/PageTitle'
@@ -9,6 +10,7 @@ import ContactForm from '@/components/ContactForm'
 import imageBackground from '@/public/images/Production.webp'
 
 const Production = () => {
+    const { locale, locales, defaultLocale, asPath } = useRouter();
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10'>
@@ -16,13 +18,28 @@ const Production = () => {
             <PageTitle>Production</PageTitle>
 
             <p className='text-base md:text-lg py-5'>
-            Do you have a great 'hook' for a song that you are having trouble developing? Maybe you have a song that you want to add instrumentation to? Or maybe you just want to have someone produce a beat from scratch that will be all yours?
-            <br />
-            <br />
-            Well, if you find yourself in any of these scenarios you are in the right place!
-            <br />
-            <br />
-            Services I offer:
+                {locale === 'en' ? (
+                    <>
+                    Do you have a great 'hook' for a song that you are having trouble developing? Maybe you have a song that you want to add instrumentation to? Or maybe you just want to have someone produce a beat from scratch that will be all yours?
+                    <br />
+                    <br />
+                    Well, if you find yourself in any of these scenarios you are in the right place!
+                    <br />
+                    <br />
+                    Services I offer:
+                    </>
+                ):
+                (
+                    <>
+                    Hai bisogno di aiuto nella creazione dei tuoi brani? Hai un testo con un’idea di media che necessita di un arrangiamento? O forse vuoi un beat su cui puoi scrivere e farlo tutto tuo?
+                    <br />
+                    <br />
+                    Bene se è così allora sei nel posto giusto!
+                    <br />
+                    <br />
+                    Servizi che offro:
+                    </>
+                )} 
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
