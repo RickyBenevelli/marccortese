@@ -147,7 +147,7 @@
         "idTrack": "13",
         "title": "dicembre",
         "producer": "marc cortese",
-        "lirycs": "marc cortese",
+        "lirycs": "giudimorale",
         "social" : {
             "spotify": "https://open.spotify.com/track/04UkmzM4yBN0A8Qk4H9VC0?si=c3e6e96f639c4893",
             "apple": "https://music.apple.com/it/album/dicembre/1660475161?i=1660475162",
@@ -201,6 +201,18 @@
             "apple": "https://music.apple.com/it/album/rope/1679508435?i=1679508812",
             "youtube": "https://music.youtube.com/watch?v=R_AswG9geqU&feature=share",
             "deezer" : "https://deezer.page.link/GkLyL8qw8XXY5hUK6"
+        }
+    },
+    {
+        "idTrack": "18",
+        "title": "trasloco",
+        "producer": "marc cortese",
+        "lirycs": "Alessandro Quarta",
+        "social" : {
+            "spotify": "https://open.spotify.com/track/6GcIFw8ir8rltlqMNsO09h?si=4111aa6c17324e28",
+            "apple": "https://music.apple.com/it/album/trasloco-single/1684698898",
+            "youtube": "https://music.youtube.com/watch?v=6lCUsKXNh9w&feature=share",
+            "deezer" : "https://deezer.page.link/EZGSiudC23KRMWJG6"
         }
     }
 ]

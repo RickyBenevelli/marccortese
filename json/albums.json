@@ -75,5 +75,12 @@
         "cover" : "/albums/rope.webp",
         "date" : "2023-04-06",
         "tracks": ["17"]
+    },
+    {
+        "idAlbum" : "12",
+        "titleAlbum" : "trasloco",
+        "cover" : "/albums/trasloco.webp",
+        "date" : "2023-05-05",
+        "tracks": ["18"]
     }
 ]

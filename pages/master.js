@@ -19,23 +19,22 @@ const Master = () => {
 
           <p className='py-5'>
           The final touch of mastering is important because it is what allows your song to translate across every form of playback.
-          <br/>
-          Stereo mastering ( or 'traditional mastering' as its sometimes referred to):
+          <br /><br />
+          Stereo mastering (or 'traditional mastering' as its sometimes referred to):
+          <br /><br />
           I will process a WAV file of your final mix preparing it for streaming platforms, enhancing the sound quality of the file as a whole, and pushing the level as high as it can go without compromising the naturalness of the recording.
-          <br/>
-          Price: 30 euros Stem Mastering:
-          <br/>
-          <br/>
-          Stem mastering is another process where the final mix of your song is broken down into parts (i.e stems). This allows for more precision in the mastering stage and leads to a more nuanced, professional sounding result.
-          <br/>
+          <br /><br />
+          Price: 30 euros
+          <br /><br />
+          Stem Mastering:
+          <br /><br />
+          Stem mastering is another process where the final mix of your song is broken down into parts (i.e stems). This allows for more precision in the mastering stage and leads to a more nuanced, professional sounding result. <br />
           For example, one common usage of stem mastering is the separation of the vocals and the instrumentation. In this case, you will have to send me two different WAV files (Vocal stem, and instrumental stem) instead of one, as in stereo mastering. The final mix can be broken down even further if needed.
-          <br/>
-          Basic stem master price: first stem 40 euros 
-          plus
-          10 euros per added stem.
-          <br/>
+          <br /><br />
+          Basic stem master price: first stem 50 euros plus 10 euros per added stem.
+          <br /><br />
           Before sending your track please get in touch with me so that I can communicate delivery specifications to you first.
-          <br/>
+          <br /><br />
           Favorite Mastering Plugins: Ozone by Izotope, Abby Road TG Mastering Chain by Waves, RX Audio Editor by Izotope
           </p>
         

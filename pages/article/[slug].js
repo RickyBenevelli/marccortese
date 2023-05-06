@@ -32,7 +32,7 @@ const Article = ({article}) => {
             <PageTitle>Blog</PageTitle>
 
             <div>
-                <h2 className="text-2xl md:text-4xl font-light py-2">
+                <h2 className="text-2xl md:text-4xl font-light py-2 uppercase">
                     {article.title}
                 </h2>
                 <p className="uppercase text-sm font-light pb-5 md:pb-14">

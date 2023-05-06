@@ -18,12 +18,12 @@ const Mix = () => {
           <PageTitle>Mix</PageTitle>
 
           <p className='py-5'>
-          Mixing is a creative process and every song is different. Because of this, there is no 'one size fits all' price for my mixing services.
-          <br/>
-          First send me an MP3 of the rough mix/demo version of your song as well as a brief description of what DAW you are using, how many tracks/stems there are in the project, and how you would like the end result to sound.
-          <br/>
-          Once I listen to it and get a feel for what is needed, I will get in touch so that we can speak in detail about the project and the price.
-          <br/>
+          Mixing is a creative process and every song is different. Because of this, there is no 'one size fits all' price for my mixing services. I work remotely as well as on site but the process is still the same.
+          <br /><br />
+          First send me an MP3 of the rough mix/demo version of your song as well as a brief description of what DAW you are using, how many tracks/stems there are in the project, how you would like the end result to sound, and the timeframe that you would like your mix to be delivered in.
+          <br /><br />
+          Once I listen to it and get a feel for what is needed, I will get in touch so that we can speak in detail about the project and the price. Generally the price range for a mix will be between 50 and 200 euros depending on the characteristics of the song.
+          <br /><br />
           Favorite Mixing Plugin Ins: Kramer Tape by Waves, Nectar by Izotope, CLA-76 Compressor by Waves
           </p>
         

@@ -18,7 +18,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className='z-50 w-full fixed top-0 h-20 backdrop-blur flex flex-row items-center justify-between text-white font-light transition-all duration-700 ease-in-out'>
+      <nav className='z-50 w-full fixed top-0 h-20 backdrop-blur flex flex-row items-center justify-between text-white font-light'>
 
           <div className='max-w-[1240px] w-full m-auto flex flex-row items-center justify-between'>
 
@@ -73,13 +73,14 @@ const NavBar = () => {
       </nav>
 
       {/* tendina del menù mobile */}
-      <div className={`fixed w-screen h-screen bg-black/90 dark:bg-black/90 z-50 md:hidden ${isOpen ? "right-0 top-0" : "right-[-100%] top-[-100%]"} transition-all duration-100`}>
-        <div className='fixed max-w-[1240px] w-full m-auto flex flex-row items-center justify-end'>
-            {isOpen && <AiOutlineClose className='w-10 h-10 fill-white m-5 transition-all ease-in duration-200' onClick={toggleMenu}/>}
+      <div className={`fixed w-screen h-screen bg-black/90 dark:bg-black/90 z-50 md:hidden ${isOpen ? "right-0 top-0" : "right-[-100%] top-[-100%]"} transition-all duration-100 ease-in-out`}>
+        
+        <div className={`fixed max-w-[1240px] w-full m-auto flex flex-row items-center justify-end ${isOpen ? "opacity-100" : "opacity-0"} transition-all duration-300 ease-in-out delay-200`}>
+            {isOpen && <AiOutlineClose className='w-10 h-10 fill-white m-5' onClick={toggleMenu}/>}
         </div>
         
 
-        <div className='flex flex-col w-full h-full pt-20 mb-[15vh] items-center justify-start text-white dark:text-white'>
+        <div className={`flex flex-col w-full h-full pt-20 mb-[15vh] items-center justify-start text-white dark:text-white ${isOpen ? "opacity-100 delay-150" : "opacity-0"}`}>
 
             <ul className='text-[3vh] text-center font-light flex flex-col justify-around pb-[2vh]'>
             {

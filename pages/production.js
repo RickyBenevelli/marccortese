@@ -16,11 +16,13 @@ const Production = () => {
             <PageTitle>Production</PageTitle>
 
             <p className='text-base md:text-lg py-5'>
-            Do you have a great 'hook' for a song that you are having trouble developing? Maybe you have a song you want to add instrumentation to? Or maybe you just want to have someone produce a beat from scratch that will be all yours?
-            <br/>
-            Well, if you find yourself in any of these scenarios you are in the right place! 
+            Do you have a great 'hook' for a song that you are having trouble developing? Maybe you have a song that you want to add instrumentation to? Or maybe you just want to have someone produce a beat from scratch that will be all yours?
             <br />
-            Here are the services that I offer:
+            <br />
+            Well, if you find yourself in any of these scenarios you are in the right place!
+            <br />
+            <br />
+            Services I offer:
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
@@ -44,7 +46,15 @@ const Production = () => {
             </div>
             
             <p className='text-base md:text-lg py-5'>
-            I will record and add any of the following instruments to your song: acoustic guitar, electric guitar, electric bass, synthesizer, percussion, drums. I play all these instruments on my own songs and I'd be happy to add any one of them to yours!
+            I will record and add any of the following instruments to your song: acoustic guitar, electric guitar, electric bass, synthesiser, percussion, drums and various others. I play all these instruments on my own songs and I'd be happy to add any one of them to yours!
+            </p>
+
+            <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
+                <h2>Recording</h2>
+            </div>
+            
+            <p className='text-base md:text-lg py-5'>
+            Testo da mettere
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
@@ -52,7 +62,7 @@ const Production = () => {
             </div>
             
             <p className='text-base md:text-lg py-5'>
-            Have you heard my golden voice (haha ;)) and thought to yourself- man, I need that voice on one of my tunes!! I will sing lead vocals, background vocals, voiceovers, ect. into my trusty Audio Tecnica AT4040 condenser mic! Also, if you are looking for female backing vocals I can organize to have them recorded with the talented singers that I work with on a regular basis in my studio.
+            Have you heard my golden voice ;) and thought to yourself - man, I need that voice on one of my tunes!! I will sing lead vocals, background vocals, voiceovers, etc. into my trusty Audio Tecnica AT4040 condenser mic! Also, if you are looking for female backing vocals I can organize to have them recorded with the talented singers that I collaborate with on a regular basis in my studio.
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
@@ -68,14 +78,13 @@ const Production = () => {
             </div>
             
             <p className='text-base md:text-lg py-5'>
-            1-2-1 lessons
+            1- to -1 lessons.
             <br />
-            Logic X pro, Mixing, Mastering, Music Production, Songwriting. 
+            Logic X pro, Mixing, Mastering, Music Production, Songwriting.
             <br />
             30 euros per hour or 50 euros for a two hour block.
-            </p>
-
-            <p className='text-base md:text-lg pt-10'>
+            <br />
+            <br />
             Most of these services are subjective and the prices vary greatly depending on the situation. For more information on the process get in touch with me directly to discuss your idea.
             </p>
             
