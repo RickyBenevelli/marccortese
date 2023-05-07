@@ -2,32 +2,129 @@
 
 Questo è il repository del sito web di Marc Cortese.
 
+## User Manual
+
+#### Aggiungere un nuovo album
+Per aggiungere un nuovo album/brano/artista bisogna modificare i file .json presenti nella cartella `json`.
+
+```json
+// artist.json
+[
+  {
+      "idArtist": "1",
+      "name": "marc cortese",
+      "tracks": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18"],
+      "albums" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+  }
+]
+```
+
+```json
+// albums.json
+[
+  {
+      "idAlbum" : "1",
+      "titleAlbum" : "suspicious issues",
+      "cover" : "/albums/suspicious-issues.webp",
+      "date" : "2022-01-07",
+      "tracks": ["1"]
+  }
+]
+```
+
+```json
+// tracks.json
+[
+  {
+      "idTrack": "1",
+      "title": "suspicious issues",
+      "producer": "marc cortese, Notorious CZR",
+      "lirycs": "marc cortese",
+      "social" : {
+          "spotify": "https://open.spotify.com/track/56PG9CWyIu3svT99rQs9kJ?si=c1e153c0bbf740a8",
+          "apple": "https://music.apple.com/it/album/suspicious-issues/1601830088?i=1601830090",
+          "youtube": "https://music.youtube.com/watch?v=ZzauRCKcyfs&feature=share",
+          "deezer" : "https://deezer.page.link/54NG3su8zfafy5s6A"
+      }
+  },
+]
+```
+
+#### Aggiungere un nuovo articolo
+
+```json
+[
+  {
+      "title": "There is no music production without the artist",
+      "date": "2023-04-28",
+      "cover": "/images/Error.webp",
+      "slug": "music-production-without-artist",
+      "text": "<p>Inserire qui il testo stilizzato</p>"
+  }
+]
+```
+
+
+<br/>
+
 ## Struttura
 
 * components
 * json
-    * en.json
-    * it.json
+    * albums.json
+    * articles.json
+    * artists.json
+    * menu.json
+    * tracks.json
 * lib
 * pages
+    * api
+        * contact.js
+    * articles
+        * [slug].js
+    * artists
+        * [idArtist].js
+    * works
+        * [idAlbum].js
     * _app.jsx
     * _document.jsx
-    * index.jsx
+    * 404.jsx
+    * about.js
+    * blog.js
+    * contact.js
+    * cookies.js
+    * index.js
+    * master.js
+    * media.js
+    * mix.js
+    * privacy.js
+    * production.js
+    * works.js
 * public
+    * about
+    * albums
     * favicon
     * icons
     * images
         * _(section images)_
+    * media
+    * Press Kit Marc Cortese - English.pdf
+    * Press Kit Marc Cortese.pdf
 * styles
 
-
-## TODO: 
-- [ ] favicon safari
-- [ ] riordinare albums
 
 
 ## Development
 
+### TODO:
+- [ ] temmpo attesa invio del form
+- [ ] caricamento dei files (forse no)
+- [ ] cookie e privacy
+
+### BUGS:
+- [ ] problemi caricamento immagini ipad
+
+### History
 Dopo avere inizializzato il progetto con `yarn create next-app`, ho aggiunto le opzioni per l'i18n.
 
 ```js
