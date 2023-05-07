@@ -18,7 +18,7 @@ const Production = () => {
             <PageTitle>Production</PageTitle>
 
             <p className='text-base md:text-lg py-5'>
-                {locale === 'en' ? (
+                {true ? (
                     <>
                     Do you have a great 'hook' for a song that you are having trouble developing? Maybe you have a song that you want to add instrumentation to? Or maybe you just want to have someone produce a beat from scratch that will be all yours?
                     <br />
@@ -71,7 +71,7 @@ const Production = () => {
             </div>
             
             <p className='text-base md:text-lg py-5'>
-            Testo da mettere
+            I can record you as well as your instrument in my studio.
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>

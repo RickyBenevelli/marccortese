@@ -25,7 +25,7 @@ const Master = () => {
           I will process a WAV file of your final mix preparing it for streaming platforms, enhancing the sound quality of the file as a whole, and pushing the level as high as it can go without compromising the naturalness of the recording.
           <br /><br />
           Price: 30 euros
-          <br /><br />
+          <br /><br /><br />
           Stem Mastering:
           <br /><br />
           Stem mastering is another process where the final mix of your song is broken down into parts (i.e stems). This allows for more precision in the mastering stage and leads to a more nuanced, professional sounding result. <br />

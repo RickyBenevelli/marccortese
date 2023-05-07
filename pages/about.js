@@ -15,15 +15,6 @@ const photos = [
     { url: '/about/3.webp', name: 'MarcCortese.jpg' },
   ];
   
-  const handleDownloadMultiple = () => {
-    const link = document.createElement('a');
-    link.href = '../public/about/Archivio.zip';
-    link.download = 'Archivio.zip';
-    link.textContent = 'Download ZIP';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
 const About = () => {
     const [hoveredImage, setHoveredImage] = useState(null);
@@ -40,37 +31,6 @@ const About = () => {
         setHoveredImage(null);
     };
 
-    const downloadZip = () => {
-        const link = document.createElement('a');
-        link.href = '../public/about/archivio.zip';
-        link.download = 'Archivio.zip';
-        link.textContent = 'Download ZIP';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-
-
-
-  const handleDownloadMultiple = () => {
-    const zip = new JSZip();
-    const folder = zip.folder('immagini');
-
-    photos.forEach((photo) => {
-      fetch(photo.url)
-        .then((response) => response.blob())
-        .then((blob) => folder.file(photo.name, blob));
-    });
-
-    zip.generateAsync({ type: 'blob' }).then((content) => {
-      const link = document.createElement('a');
-      link.download = 'immagini.zip';
-      link.href = URL.createObjectURL(content);
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-  };
 
   return (
     <PageLayout imageBackground={imageBackground}>
@@ -79,7 +39,7 @@ const About = () => {
             <PageTitle>About</PageTitle>
             <div className='text-base md:text-lg py-5'>
 
-              {locale == "en" ? (
+              {true ? (
                 <p>
                 Marc Cortese is a multi-instrumentalist from the United States. In 2012 he traveled to Italy in search of his roots and since then has been traveling both Italy and Europe as a drummer/front man for various touring acts. 
                 <br/>
@@ -100,8 +60,7 @@ const About = () => {
               )}
             
             </div>
-
-            <DownloadButton text="DOWNLOAD PRESSKIT" file="/Press Kit Marc Cortese - English.pdf"/>
+            <DownloadButton text="DOWNLOAD PRESSKIT" file={`${locale == "en" ? "/Press Kit Marc Cortese - English.pdf" : "/Press Kit Marc Cortese.pdf"}`}/>
             <div className='flex flex-col sm:flex-row'>
                 {photos.map((image) => (
                     <div key={image.url} 
@@ -132,11 +91,6 @@ const About = () => {
                 ))}
                 
             </div>
-
-            <button id='downloadButton' onClick={downloadZip} className="py-5 text-xl md:text-3xl flex flex-row items-center cursor-pointer uppercase italic">
-                <p>DOWNLOAD PHOTOS</p>
-                <Image src={download} alt="" className="h-5 w-5 m-5" />
-            </button>
 
         </div>
     </PageLayout>
