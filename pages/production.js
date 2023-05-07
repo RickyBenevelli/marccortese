@@ -71,7 +71,7 @@ const Production = () => {
             </div>
             
             <p className='text-base md:text-lg py-5'>
-            I can record you as well as your instrument in my studio.
+            If you are in/around Venice Italy, I have a recording studio on site. For those of you looking to record vocals/instrumentation of any kind please write me to book a time slot.
             </p>
 
             <div className='w-full text-center text-2xl md:text-4xl font-light pt-10 uppercase'>
