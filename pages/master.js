@@ -26,7 +26,7 @@ const Master = () => {
           <br /><br />
           Price: 30 euros
           <br /><br /><br />
-          Stem Mastering:
+          Stem mastering:
           <br /><br />
           Stem mastering is another process where the final mix of your song is broken down into parts (i.e stems). This allows for more precision in the mastering stage and leads to a more nuanced, professional sounding result. <br />
           For example, one common usage of stem mastering is the separation of the vocals and the instrumentation. In this case, you will have to send me two different WAV files (Vocal stem, and instrumental stem) instead of one, as in stereo mastering. The final mix can be broken down even further if needed.
