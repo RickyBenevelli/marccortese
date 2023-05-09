@@ -18,7 +18,7 @@ const Footer = () => {
           <div className='w-full flex flex-col items-start justify-around sm:w-4/5 md:pr-5 md:pt-4'> {/* CONTATTI */}
             <div >
               <Link href={"/contacts"} className='flex flex-row items-center' target="_blank">
-              <h4 className='text-[6vw] sm:text-[2vw] xl:text-[25px]'>CONTATTI</h4>
+              <h5 className='text-[6vw] sm:text-[2vw] xl:text-[25px]'>CONTATTI</h5>
               <Image src={arrow} className='w-[6vw] h-[6vw] sm:w-[2vw] sm:h-[2vw] xl:w-[25px] xl:h-[25px] ml-[5vw] sm:ml-[2vw] xl:ml-[25px]' alt='' />
               </Link>
             </div>

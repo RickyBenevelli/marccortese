@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,9 +17,11 @@
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "file-saver": "^2.0.5",
+    "globby": "^11.0.1",
     "image-size": "^1.0.2",
     "jszip": "^3.10.1",
     "next": "13.3.0",
+    "next-sitemap": "^4.0.9",
     "nextjs-google-analytics": "^2.3.3",
     "nodemailer": "^6.9.1",
     "postcss": "8.4.21",

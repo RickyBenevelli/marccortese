@@ -370,3 +370,34 @@ Bisogna verificare che piaccia a benni come effetto.
 Aggiunto `image-size` per gestire le immagini.
 
 Aggiunto `yarn add react-youtube` per gestire i video di youtube.
+
+### SEO:
+
+`yarn add next-sitemap` per generare la sitemap.xml
+
+```js
+// next-sitemap.config.js
+/** @type {import('next-sitemap').IConfig} */
+
+const siteUrl = "https://marccortese.com";
+
+module.exports = {
+  siteUrl,
+  generateRobotsTxt: true,
+  generateIndexSitemap: false,
+};
+```
+
+```json
+// package.json
+"scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+```
+
+
+`yarn add next-seo` per gestire il SEO.
