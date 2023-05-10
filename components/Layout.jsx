@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-
+import { NextSeo, DefaultSeo } from 'next-seo';
 import NavBar from './NavBar'
 import Footer from './Footer'
 
@@ -9,8 +9,9 @@ const Layout = ({children}) => {
     <div>
       <Head>
         <title>Marc Cortese</title>
-        <meta name="description" content="Marc Cortese" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Favicon */}
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -20,6 +21,42 @@ const Layout = ({children}) => {
         <meta name="theme-color" content="#ffffff"></meta> 
 
       </Head>
+      <DefaultSeo
+        title="Marc Cortese"
+        description="Marc Cortese is a multi-instrumentalist from the United States. In 2012 he traveled to Italy in search of his roots and since then has been traveling both Italy and Europe as a drummer/front man for various touring acts."
+        canonical="https://www.marccortese.com"
+        defaultTitle="Marc Cortese"
+        languageAlternates={[
+          // {
+          //   hrefLang: 'it-IT',
+          //   href: 'https://www.marccortese.com',
+          // },
+          {
+            hrefLang: 'en-US',
+            href: 'https://www.marccortese.com',
+          }
+        ]}
+        openGraph={{
+          type: 'website',
+          locale: 'en_US',
+          url: 'https://www.marccortese.com',
+          site_name: 'Marc Cortese',
+          images: [
+            {
+              url: 'https://www.marccortese.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75',
+              width: 1080,
+              height: 298,
+              alt: 'Marc Cortese',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '',
+          site: '',
+          cardType: 'summary_large_image',
+        }}
+      />
+
         {children}
     </div>
   )
