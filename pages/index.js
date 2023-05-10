@@ -33,7 +33,7 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col max-w-3xl w-full h-full items-center justify-between pt-[4vh] pb-[8vh] lg:pt-[6vh] relative z-10 text-white'>
-        <span className='text-center inline-block relative'>
+        <span className='text-center inline-block relative select-none'>
           <h1 className={`text-[5vh] lg:text-[10vh] ${marcFont.className} pt-[4vh]`}>Marc Cortese</h1>
           <Image src={lineSvg} alt='' fill className='mt-[6vh] lg:mt-[8vh] z-0' priority/>
         </span>

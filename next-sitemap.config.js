@@ -6,5 +6,5 @@ module.exports = {
   siteUrl,
   generateRobotsTxt: true,
   generateIndexSitemap: false,
-  exclude: ["/404", "/artist/*", "/works/*"],
+  exclude: ["/404", "*artists/*", "*works/*"],
 };

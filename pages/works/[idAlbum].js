@@ -22,7 +22,6 @@ const AlbumPage = ({album, data}) => {
             <div className="flex flex-row items-center">
                 <Link href={"/works"} className="flex flex-row items-center hover:text-white/60">
                     <p className="font-light text-xl">Album</p> 
-                    {/* NOTE: non è corretto mettere Album qui sopra */}
                     <MdKeyboardArrowRight className="w-8 h-8"/>
                 </Link>
                 <p className="font-light text-xl uppercase">

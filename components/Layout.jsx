@@ -43,9 +43,9 @@ const Layout = ({children}) => {
           site_name: 'Marc Cortese',
           images: [
             {
-              url: 'https://www.marccortese.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75',
-              width: 1080,
-              height: 298,
+              url: '/icons/logoMC.png',
+              width: 407,
+              height: 407,
               alt: 'Marc Cortese',
             },
           ],
