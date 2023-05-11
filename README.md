@@ -124,6 +124,7 @@ Per aggiungere un nuovo album/brano/artista bisogna modificare i file .json pres
 ### BUGS:
 - [ ] problemi caricamento immagini ipad
 - [ ] img square
+- [ ] favicon safari
 
 ### History
 Dopo avere inizializzato il progetto con `yarn create next-app`, ho aggiunto le opzioni per l'i18n.

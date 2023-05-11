@@ -27,10 +27,10 @@ const Layout = ({children}) => {
         canonical="https://www.marccortese.com"
         defaultTitle="Marc Cortese"
         languageAlternates={[
-          // {
-          //   hrefLang: 'it-IT',
-          //   href: 'https://www.marccortese.com',
-          // },
+          {
+            hrefLang: 'it-IT',
+            href: 'https://www.marccortese.com',
+          },
           {
             hrefLang: 'en-US',
             href: 'https://www.marccortese.com',
@@ -38,7 +38,7 @@ const Layout = ({children}) => {
         ]}
         openGraph={{
           type: 'website',
-          locale: 'en_US',
+          locale: 'it_IT',
           url: 'https://www.marccortese.com',
           site_name: 'Marc Cortese',
           images: [

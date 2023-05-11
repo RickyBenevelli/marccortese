@@ -34,23 +34,23 @@ const Contacts = () => {
             <div className='md:w-1/2 flex flex-col items-start max-md:pt-10 w-full'>
               <div className='flex flex-col items-start m-auto'>
                 
-                <Link href={"/facebook"} className='flex flex-row items-center text-lg'>
+                <Link href={"https://www.facebook.com/marc.cortese.9/?locale=it_IT"} className='flex flex-row items-center text-lg'>
                   <Image src={facebook} alt='Facebook' className='socialIconContacts' priority/>
                   <span className='text-lg'>Facebook</span>
                 </Link>
-                <Link href={"/instagram"} className='flex flex-row items-center text-lg'>
+                <Link href={"https://instagram.com/marccortese_musix?igshid=YmMyMTA2M2Y="} className='flex flex-row items-center text-lg'>
                   <Image src={instagram} alt='Instagram' className='socialIconContacts' priority/>
                   <span className='text-lg'>Instagram</span>
                 </Link>
-                <Link href={"/spotify"} className='flex flex-row items-center text-lg'>
+                <Link href={"https://open.spotify.com/artist/08pTM5TPyqCYEeFFthnoLr?si=wuasu9SLRuK-j4SV64PXHg"} className='flex flex-row items-center text-lg'>
                   <Image src={spotify} alt='Spotify' className='socialIconContacts' priority/>
                   <span className='text-lg'>Spotify</span>
                 </Link>
-                <Link href={"/youtube"} className='flex flex-row items-center text-lg'>
+                <Link href={"https://www.youtube.com/@marccortese"} className='flex flex-row items-center text-lg'>
                   <Image src={youtube} alt='YouTube' className='socialIconContacts' priority/>
                   <span className='text-lg'>YouTube</span>
                 </Link>
-                <Link href={"/apple"} className='flex flex-row items-center text-lg'>
+                <Link href={"https://music.apple.com/it/artist/marc-cortese/598073934"} className='flex flex-row items-center text-lg'>
                   <Image src={apple} alt='Apple Music' className='socialIconContacts' priority/>
                   <span className='text-lg'>Apple Music</span>
                 </Link>
