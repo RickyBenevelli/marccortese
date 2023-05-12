@@ -29,7 +29,7 @@ const Layout = ({children}) => {
         languageAlternates={[
           {
             hrefLang: 'it-IT',
-            href: 'https://www.marccortese.com',
+            href: 'https://www.marccortese.com/it',
           },
           {
             hrefLang: 'en-US',
@@ -39,7 +39,7 @@ const Layout = ({children}) => {
         openGraph={{
           type: 'website',
           locale: 'it_IT',
-          url: 'https://www.marccortese.com',
+          url: 'https://www.marccortese.com/it',
           site_name: 'Marc Cortese',
           images: [
             {

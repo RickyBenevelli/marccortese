@@ -6,7 +6,7 @@ module.exports = {
   siteUrl,
   generateRobotsTxt: true,
   generateIndexSitemap: false,
-  exclude: ["/404", "*artists/*", "*/works/*", "!/works"],
+  exclude: ['/works/*', '/it/works/*', '/artists/*', '/it/artists/*'],
   alternateUrls: [
     {
       href: `${siteUrl}/it`,

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { Inter } from 'next/font/google'
-import localFont from '@next/font/local'
+import localFont from "next/font/local"
 import { useRouter } from "next/router";
 
 import facebook from '@/public/icons/Facebook.svg'

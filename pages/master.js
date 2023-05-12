@@ -10,7 +10,7 @@ import imageBackground from '@/public/images/Master.webp'
 import ContactForm from '@/components/ContactForm'
 
 const Master = () => {
-  
+  const { locale, locales, defaultLocale, asPath } = useRouter();
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10 text-base md:text-lg'>
