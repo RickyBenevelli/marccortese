@@ -17,7 +17,7 @@ import imageBackground from '@/public/images/Contacts.webp'
 import ContactForm from '@/components/ContactForm'
 
 const Contacts = () => {
-  
+  const { locale, locales, defaultLocale, asPath } = useRouter();
   return (
     <PageLayout imageBackground={imageBackground}>
         <div className='px-5 md:px-10 w-full'>
@@ -26,7 +26,13 @@ const Contacts = () => {
 
           <div className='w-full flex flex-col md:flex-row items-start'>
             <div className='md:w-1/2 w-full'>
-              <p className='font-light text-xl'>For general inquiries please fill out the form below.</p>
+              <p className='font-light text-xl'>
+                {
+                  locale === 'en' ?
+                  "For general inquiries please fill out the form below." :
+                  "Per richieste di carattere generale si prega di compilare il modulo sottostante."
+                }
+              </p>
               <p className='pt-5 md:pt-10'>Contact me</p>
               <ContactForm />
             </div>
