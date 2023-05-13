@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
@@ -16,8 +17,13 @@ import articles from "@/json/articles.json";
 const Article = ({article}) => {
   const [openImage, setOpenImage] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const { locale } = useRouter();
   const createMarkup = () => {
-    return { __html: article.text };
+    if(locale == 'en'){
+      return {__html: article.text}
+    } else {
+      return {__html: article.text_it}
+    }
   };
 
   const toggleImage = () => {
@@ -33,7 +39,7 @@ const Article = ({article}) => {
 
             <div>
                 <h2 className="text-2xl md:text-4xl font-light py-2 uppercase">
-                    {article.title}
+                    {locale == 'en' ? article.title : article.title_it}
                 </h2>
                 <p className="uppercase text-sm font-light pb-5 md:pb-14">
                     {dayjs(article.date).format('D MMMM YYYY')}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { useRouter } from 'next/router'
 import facebook from '@/public/icons/Facebook.svg'
 import apple from '@/public/icons/Applemusic.svg'
 import instagram from '@/public/icons/Instagram.svg'
@@ -10,6 +10,7 @@ import youtube from '@/public/icons/Youtube.svg'
 import arrow from '@/public/icons/Arrow.svg'
 
 const Footer = () => {
+  const { locale, locales, defaultLocale, asPath } = useRouter();
   return (
     <section className='w-full max-w-[1240px] mx-auto bottom-0 flex flex-col-reverse sm:flex-row items-center sm:items-end mt-10 text-white px-5 pb-4 font-light'>
 
@@ -18,7 +19,9 @@ const Footer = () => {
           <div className='w-full flex flex-col items-start justify-around sm:w-4/5 md:pr-5 md:pt-4'> {/* CONTATTI */}
             <div >
               <Link href={"/contacts"} className='flex flex-row items-center' target="_blank">
-              <h5 className='text-[6vw] sm:text-[2vw] xl:text-[25px]'>CONTATTI</h5>
+              <h5 className='text-[6vw] sm:text-[2vw] xl:text-[25px]'>
+                {locale === 'en' ? 'CONTACTS' : 'CONTATTI'}
+              </h5>
               <Image src={arrow} className='w-[6vw] h-[6vw] sm:w-[2vw] sm:h-[2vw] xl:w-[25px] xl:h-[25px] ml-[5vw] sm:ml-[2vw] xl:ml-[25px]' alt='' />
               </Link>
             </div>
@@ -39,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='text-center text-xs sm:text-[1vw] xl:text-[13px] sm:1/5 pt-1'>
+          <div className='text-center text-xs sm:text-[1vw] xl:text-[13px] sm:1/5 pt-1 flex flex-col'>
             <Link href="/cookie" className='' target="_blank">Cookie</Link>
             <Link href="/privacy" className='' target="_blank">Privacy Policy</Link>
           </div>

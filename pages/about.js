@@ -20,8 +20,6 @@ const About = () => {
     const [hoveredImage, setHoveredImage] = useState(null);
     const { locale, locales, defaultLocale, asPath } = useRouter();
     
-    console.log(locale, locales, defaultLocale, asPath);
-    console.log(useRouter());
 
     const handleDownload = (image) => {
         const link = document.createElement('a');
