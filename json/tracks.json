@@ -214,5 +214,17 @@
             "youtube": "https://music.youtube.com/watch?v=6lCUsKXNh9w&feature=share",
             "deezer" : "https://deezer.page.link/EZGSiudC23KRMWJG6"
         }
+    },
+    {
+        "idTrack": "19",
+        "title": "spettro",
+        "producer": "marc cortese",
+        "lirycs": "giudimorale",
+        "social" : {
+            "spotify": "https://open.spotify.com/track/7KEIYsr7pp0J3ROShuT2zh?si=1dd5c61ddcef4292",
+            "apple": "https://music.apple.com/it/album/spettro/1689365062?i=1689365063",
+            "youtube": "https://music.youtube.com/watch?v=PvweL0O3FHI&feature=share",
+            "deezer" : "https://deezer.page.link/WWCAJ1Uy2p7cf2Gn7"
+        }
     }
 ]

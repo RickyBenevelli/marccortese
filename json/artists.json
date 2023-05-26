@@ -20,8 +20,8 @@
     {
         "idArtist": "4",
         "name": "giudimorale",
-        "tracks": ["13"],
-        "albums" : ["7"]
+        "tracks": ["13", "19"],
+        "albums" : ["7", "13"]
     },
     {
         "idArtist": "5",

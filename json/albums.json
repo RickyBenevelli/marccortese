@@ -82,5 +82,12 @@
         "cover" : "/albums/trasloco.webp",
         "date" : "2023-05-05",
         "tracks": ["18"]
+    },
+    {
+        "idAlbum" : "13",
+        "titleAlbum" : "spettro",
+        "cover" : "/albums/spettro.webp",
+        "date" : "2023-05-26",
+        "tracks": ["19"]
     }
 ]
