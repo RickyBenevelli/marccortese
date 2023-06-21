@@ -54,7 +54,6 @@ const About = () => {
                 Il risultato di questi anni è “six songs”, il suo primo EP (uscito in ottobre 2022), interamente autoprodotto dalla composizione agli strumenti alle voci fino alla post-produzione.<br/>
                 Il suo genere spazia dal soul al pop psichedelico fino al pop sperimentale.
                 <br/>
-                Il suo genere spazia dal soul al pop psichedelico fino al pop sperimentale.
                 </p>
               )}
             

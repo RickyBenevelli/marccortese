@@ -89,5 +89,12 @@
         "cover" : "/albums/spettro.webp",
         "date" : "2023-05-26",
         "tracks": ["19"]
+    },
+    {
+        "idAlbum" : "14",
+        "titleAlbum" : "Incendio",
+        "cover" : "/albums/incendio.webp",
+        "date" : "2023-06-16",
+        "tracks": ["20"]
     }
 ]
